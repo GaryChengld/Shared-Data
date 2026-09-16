@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-09-15T08:30:00-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7619.98,
+      "daily_high": 7647.99,
+      "daily_low": 7592.28,
+      "open": 7611.44
+    },
+    "vix": 17.10,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": null,
+    "spx_future": "-0.16%"
+  },
+  "gex_data": {
+    "net_gex_min": -51760000000,
+    "net_gex_max": -29800000000,
+    "gamma_regime": "negative",
+    "gamma_flip": 7624,
+    "call_wall": 7800,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "negative",
+    "volatility_behavior": "trend-amplifying",
+    "expected_behavior": "moves extend, less mean reversion"
+  },
+  "options_flow": {
+    "put_call_ratio_oi": null,
+    "put_call_ratio_volume": null,
+    "skew": "put skew elevated (CBOE SKEW 152.09 prior close)",
+    "zero_dte_dominance": null
+  },
+  "volatility_surface": {
+    "vix": 17.10,
+    "iv_30d_range": [null, null],
+    "iv_percentile": null,
+    "term_structure": null
+  }
+}
