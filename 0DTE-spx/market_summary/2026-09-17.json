@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-09-17T08:32:44-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7551.81,
+      "daily_high": 7626.79,
+      "daily_low": 7507.77,
+      "open": 7601.25
+    },
+    "vix": 17.71,
+    "add_nyse": -545
+  },
+  "premarket": {
+    "vix": 15.99,
+    "spx_future": "+0.82%"
+  },
+  "gex_data": {
+    "net_gex_min": -36950000000,
+    "net_gex_max": -36770000000,
+    "gamma_regime": "negative",
+    "gamma_flip": 7675,
+    "call_wall": 7600,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 7600
+  },
+  "dealer_positioning": {
+    "gamma_regime": "negative",
+    "volatility_behavior": "trend-amplifying",
+    "expected_behavior": "wider ranges, extending breakouts, less mean reversion"
+  },
+  "options_flow": {
+    "put_call_ratio_oi": null,
+    "put_call_ratio_volume": null,
+    "skew": null,
+    "zero_dte_dominance": null
+  },
+  "volatility_surface": {
+    "vix": 15.99,
+    "iv_30d_range": [
+      null,
+      null
+    ],
+    "iv_percentile": null,
+    "term_structure": "normal contango"
+  }
+}
