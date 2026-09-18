@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-09-18T08:31:07-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7637.76,
+      "daily_high": 7646.86,
+      "daily_low": 7611.81,
+      "open": 7631.44
+    },
+    "vix": 15.44,
+    "add_nyse": 1830
+  },
+  "premarket": {
+    "vix": 15.34,
+    "spx_future": "+0.10%"
+  },
+  "gex_data": {
+    "net_gex_min": -69610000000,
+    "net_gex_max": 59400000000,
+    "gamma_regime": "mixed/model-dependent; positive in current chain heatmap, negative in settlement-repriced model",
+    "gamma_flip": 7603,
+    "call_wall": 7800,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7600,
+    "largest_positive_gamma_strike": 7680
+  },
+  "dealer_positioning": {
+    "gamma_regime": "mixed, with strong 0DTE positive gamma concentration",
+    "volatility_behavior": "mean-reverting above the near-spot negative-gamma pocket; trend-amplifying below roughly 7635",
+    "expected_behavior": "0DTE pinning is significant into quarterly expiration; breaks below the near-spot gamma boundary can extend"
+  },
+  "options_flow": {
+    "put_call_ratio_oi": null,
+    "put_call_ratio_volume": null,
+    "skew": null,
+    "zero_dte_dominance": true
+  },
+  "volatility_surface": {
+    "vix": 15.34,
+    "iv_30d_range": [
+      null,
+      null
+    ],
+    "iv_percentile": null,
+    "term_structure": "normal contango"
+  }
+}
