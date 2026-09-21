@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-09-21T08:51:00-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7650.50,
+      "daily_high": 7657.17,
+      "daily_low": 7610.52,
+      "open": 7657.17
+    },
+    "vix": 14.81,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 14.97,
+    "spx_future": 0.68
+  },
+  "gex_data": {
+    "net_gex_min": -3710000000,
+    "net_gex_max": 1788545990,
+    "gamma_regime": "positive gamma near premarket spot; cross-model estimates remain mixed after quarterly expiration",
+    "gamma_flip": 7645,
+    "call_wall": 7695,
+    "put_wall": 7640,
+    "largest_negative_gamma_strike": 7640,
+    "largest_positive_gamma_strike": 7695
+  },
+  "dealer_positioning": {
+    "gamma_regime": "positive above the 7645 gamma-flip area, with post-expiration positioning still model-dependent",
+    "volatility_behavior": "positive gamma favors dampened realized volatility and mean reversion while SPX remains above the flip; a break below the 7640-7645 cluster can increase directional hedging sensitivity",
+    "expected_behavior": "premarket SPX is above the 7695 call wall; sustained acceptance above it can shift behavior toward positive extension, while rejection back below 7695 favors reversion toward 7675 and the 7640-7645 regime cluster"
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.40,
+    "put_call_ratio_volume": 1.13,
+    "skew": "put skew remains elevated; current September 25 profile shows 56.7% put skew and a recent 25-delta risk reversal near -0.042",
+    "zero_dte_dominance": "high; same-day SPX options remain a major intraday hedging-flow component, with Friday expiration flow dominated by 0DTE activity"
+  },
+  "volatility_surface": {
+    "vix": 14.97,
+    "iv_30d_range": [11.9, 12.2],
+    "iv_percentile": 27.9,
+    "term_structure": "contango; spot VIX near 14.97 is below October VIX futures near 17.85, consistent with a low near-term volatility premium versus forward volatility"
+  }
+}
