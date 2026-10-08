@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-08T08:46:00-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7801.77,
+      "daily_high": 7807.02,
+      "daily_low": 7763.34,
+      "open": 7792.98
+    },
+    "vix": 15.08,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 15.95,
+    "spx_future": -0.5
+  },
+  "gex_data": {
+    "net_gex_min": 9.12,
+    "net_gex_max": 101.35,
+    "gamma_regime": "Net positive gamma in multiple public SPX models, with substantial variation by expiration coverage and methodology; localized negative gamma is present around 7745-7780.",
+    "gamma_flip": 7759,
+    "call_wall": 7800,
+    "put_wall": 7750,
+    "largest_negative_gamma_strike": null,
+    "largest_positive_gamma_strike": 7750
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Broadly positive modeled dealer gamma, but near-term negative-gamma pockets may amplify declines below the 7780 region.",
+    "volatility_behavior": "Positive aggregate gamma generally favors mean reversion and volatility compression. A move into the 7745-7780 negative-gamma region could increase intraday volatility and directional momentum.",
+    "expected_behavior": "Watch 7800 as the nearest call-gamma concentration, 7759 as the near-term gamma transition, and 7750 as the nearby put wall. Broader-chain models identify resistance near 7900 and downside positioning around 7500-7650. Rising oil prices and Treasury yields create additional downside risk."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.7,
+    "put_call_ratio_volume": null,
+    "skew": "October 8 SPX 0DTE 25-delta put skew approximately +1.5 implied-volatility points; downside puts are richer than comparable calls.",
+    "zero_dte_dominance": "Same-day SPX options are an important source of short-dated gamma exposure. The October 8 expiration shows concentrated positioning near 7750-7800, but its precise share of total trading volume is not verified."
+  },
+  "volatility_surface": {
+    "vix": 15.95,
+    "iv_30d_range": [
+      null,
+      null
+    ],
+    "iv_percentile": null,
+    "term_structure": "A public October 7 end-of-day analysis described the VIX futures curve as contango. Front-end volatility has firmed in the October 8 premarket amid weaker equity futures, higher Treasury yields and rising oil prices. The October 8 0DTE surface shows downside put skew and approximately 9.9% at-the-money implied volatility in one public model."
+  }
+}
