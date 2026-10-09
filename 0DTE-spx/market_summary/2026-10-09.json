@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-09T08:31:57-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7765.36,
+      "daily_high": 7797.79,
+      "daily_low": 7731.26,
+      "open": 7778.45
+    },
+    "vix": 15.41,
+    "add_nyse": 713
+  },
+  "premarket": {
+    "vix": 15.21,
+    "spx_future": 0.4
+  },
+  "gex_data": {
+    "net_gex_min": 55.12,
+    "net_gex_max": 84.76,
+    "gamma_regime": "Positive modeled SPX dealer gamma. Estimates span $55.12B-$84.76B per 1% SPX move across models with different option-book coverage; these are not directly interchangeable.",
+    "gamma_flip": 7710,
+    "call_wall": 7800,
+    "put_wall": 7800,
+    "largest_negative_gamma_strike": 7800,
+    "largest_positive_gamma_strike": 7800
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Net long gamma under model dealer-position assumptions, with spot above the approximately 7706-7718 zero-gamma cluster.",
+    "volatility_behavior": "Positive modeled dealer gamma tends to dampen intraday moves and favor mean reversion. A sustained break below roughly 7710 may shift hedging toward volatility amplification.",
+    "expected_behavior": "Premarket ES futures are approximately +0.40% after the prior SPX decline. Watch 7800 as the largest nearby call and put gamma concentration in the latest near-term model, 7750 as October 9 max pain, and 7706-7718 as the gamma-flip zone. A broader full-chain model places the call wall at 7900 and put wall at 7500. Levels are estimates, not directional guarantees."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.42,
+    "put_call_ratio_volume": 1.18,
+    "skew": "October 8 SPX 25-delta IV skew +0.038 under the Options Analysis Suite convention (calls richer than puts); vendor skew sign conventions and expiration coverage differ.",
+    "zero_dte_dominance": "0DTE SPX options account for a substantial, often majority, share of daily SPX options volume; the exact October 9 premarket share is not yet observable. Same-day max pain is estimated near 7750."
+  },
+  "volatility_surface": {
+    "vix": 15.21,
+    "iv_30d_range": [
+      12.6,
+      13.1
+    ],
+    "iv_percentile": 29,
+    "term_structure": "October 8 SPX ATM IV approximately 12.7%; October 9 nearest-expiry ATM IV 11.3%, October 12 8.3%, and 28-35 DTE roughly 12.6%-13.1%. The short end is non-monotonic while one model reports a mildly negative fitted slope (-0.002). October 8 IV percentile is 29.0%; premarket VIX is an indicative early quote."
+  }
+}
