@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-12T08:37:05-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7811.54,
+      "daily_high": 7820.57,
+      "daily_low": 7779.34,
+      "open": 7786.36
+    },
+    "vix": 14.84,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 15.49,
+    "spx_future": 0.06
+  },
+  "gex_data": {
+    "net_gex_min": 48.67,
+    "net_gex_max": 80.68,
+    "gamma_regime": "Positive modeled dealer gamma across two SPX-specific public models, approximately $48.67B-$80.68B per 1% index move; model coverage differs.",
+    "gamma_flip": 7727,
+    "call_wall": 7800,
+    "put_wall": 7800,
+    "largest_negative_gamma_strike": 7800,
+    "largest_positive_gamma_strike": 7800
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Net positive modeled gamma with SPX above the 7723-7730 gamma-flip cluster. Dealer positioning is inferred from options open interest, not directly observed.",
+    "volatility_behavior": "Positive modeled gamma generally favors intraday mean reversion and volatility compression; a sustained break below the 7723-7730 gamma-flip area could increase trend-following hedging and volatility.",
+    "expected_behavior": "The 7800 strike carries the strongest nearby call and put gamma in a near-term model; a broader-chain model instead places the call wall at 7900 and put wall at 7500. Watch 7778 as a modeled volatility trigger, 7790 as same-day max pain, and 7723-7730 as the gamma-flip area. Flat-to-slightly-positive ES futures, elevated energy prices and upcoming CPI and bank earnings make directional conviction limited."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.44,
+    "put_call_ratio_volume": 1.2,
+    "skew": "October 9 SPX 25-delta IV skew was +0.033 under the Options Analysis Suite convention (calls richer than puts); other vendors use different conventions and expirations.",
+    "zero_dte_dominance": "SPX 0DTE options typically represent a majority of SPX option volume and can dominate intraday gamma hedging. The precise October 12 0DTE volume share is not yet available before the opening session."
+  },
+  "volatility_surface": {
+    "vix": 15.49,
+    "iv_30d_range": [
+      11.7,
+      12.1
+    ],
+    "iv_percentile": 10.7,
+    "term_structure": "October 9 SPX options snapshot shows approximately 11.8% ATM IV and a mildly upward-sloping 0.002 term-structure slope; 28-35-day listed ATM IV is about 11.7%-12.1%. Very short-dated October 12 options show approximately 5.6% ATM IV in the vendor's dated chain snapshot, but its DTE labels appear stale for the October 12 session. The premarket VIX 15.49 is an indicative early quote, not an 08:37 ET synchronized observation."
+  }
+}
