@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-13T08:25:06-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7807.24,
+      "daily_high": 7821.67,
+      "daily_low": 7796.94,
+      "open": 7813.04
+    },
+    "vix": 15.21,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 15.56,
+    "spx_future": -0.13
+  },
+  "gex_data": {
+    "net_gex_min": 31.83,
+    "net_gex_max": 84.5,
+    "gamma_regime": "Positive modeled dealer gamma; GEX range in USD billions per 1% SPX move across non-comparable expiration windows and models (October 13 near-term GEX Metrix versus October 12 full-chain SquawkFlow).",
+    "gamma_flip": 7745,
+    "call_wall": 7800,
+    "put_wall": 7800,
+    "largest_negative_gamma_strike": 7750,
+    "largest_positive_gamma_strike": 7850
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled net long dealer gamma above the October 13 near-term flip at 7745; October 12 full-chain flip was 7723. Dealer inventory signs are inferred from open interest, not observed.",
+    "volatility_behavior": "Positive modeled gamma tends to suppress realized volatility and encourage mean reversion near 7800. Negative strike gamma clusters below 7785, particularly around 7750, raise downside acceleration risk if support fails.",
+    "expected_behavior": "Near-term call and put gamma walls both cluster at 7800, with October 13 max pain near 7785. The October 12 full-chain model instead had call wall 7900, put wall 7500, and volatility trigger 7778. October 13 same-day positive gamma was concentrated near 7825 in the prior close heatmap. S&P futures are slightly negative amid chip weakness and bank earnings; Wednesday CPI is an important event risk."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.44,
+    "put_call_ratio_volume": 1.2,
+    "skew": "October 12 SPX 25-delta skew +0.036 under Options Analysis Suite's call-rich sign convention, versus October 9 30-day put-minus-call risk reversal +3.65 volatility points from Options Skew Analytics. These vendor conventions differ and must not be directly compared.",
+    "zero_dte_dominance": "SPX 0DTE accounts for a majority of SPX options trading in typical sessions, but the October 13 realized volume share is not yet observable. Prior-close October 13-expiry gamma was concentrated near 7825; the exact share of total volume is unavailable."
+  },
+  "volatility_surface": {
+    "vix": 15.56,
+    "iv_30d_range": [
+      12,
+      12.14
+    ],
+    "iv_percentile": 13.5,
+    "term_structure": "October 12 SPX ATM IV was approximately 12.0% with 13.5% IV percentile (Options Analysis Suite). October 9 constant-maturity 30-day ATM IV was 12.14%, 60-day 12.82%, and 90-day 13.17%, an upward-sloping longer-dated curve (Options Skew Analytics). October 12 VIX futures were in contango; October 13 premarket VIX 15.56 is an indicative derived quote, not an official synchronized Cboe spot print."
+  }
+}
