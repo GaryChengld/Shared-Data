@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-14T08:30:50-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7805.45,
+      "daily_high": 7814.15,
+      "daily_low": 7786.11,
+      "open": 7795.27
+    },
+    "vix": 15.27,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 15.19,
+    "spx_future": 0.18
+  },
+  "gex_data": {
+    "net_gex_min": 41.04,
+    "net_gex_max": 101.4,
+    "gamma_regime": "Positive modeled dealer gamma. GEX estimates are USD billions per 1% SPX move: GEX Metrix 41.04 (October 14 07:59 ET, expirations through October 16), SquawkFlow 76.64 (October 13 close, repriced book) and 101.4 (October 13 close, all-expiration chain heatmap). These methodologies and expiration windows are not directly comparable.",
+    "gamma_flip": 7741,
+    "call_wall": 7800,
+    "put_wall": 7800,
+    "largest_negative_gamma_strike": 7750,
+    "largest_positive_gamma_strike": 7850
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled net long dealer gamma above the approximately 7740-7741 zero-gamma cluster. Dealer inventory direction is inferred from options open interest rather than directly observed.",
+    "volatility_behavior": "Positive aggregate gamma favors mean reversion near 7800. The October 13 chain heatmap turns negative below roughly 7785, with notable negative strike gamma at 7750; a break below the 7740-7741 flip may amplify moves.",
+    "expected_behavior": "Near-term GEX Metrix call and put walls both sit at 7800, with October 14 max pain near 7795. SquawkFlow's broader October 13 close model instead reports an 8000 call wall, 7500 put wall and 7778 volatility trigger. The October 14 same-day gamma heatmap shows strong positive gamma near 7850. The September CPI release at 08:30 ET creates substantial event risk and may invalidate earlier futures indications."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.76,
+    "put_call_ratio_volume": 1.12,
+    "skew": "Last independently located SPX 30-day 25-delta put-minus-call implied-volatility risk reversal was +3.65 volatility points as of October 9 (Options Skew Analytics); downside puts were richer than equidistant calls. This is a stale end-of-day reading, not a live October 14 measurement.",
+    "zero_dte_dominance": "0DTE options routinely account for a majority of SPX options volume. SquawkFlow's October 13 settlement heatmap estimates about 27% of displayed near-term gamma expires October 14, with the strongest same-day positive gamma around 7850. The realized October 14 volume share is unavailable before the open."
+  },
+  "volatility_surface": {
+    "vix": 15.19,
+    "iv_30d_range": [
+      12.1,
+      12.4
+    ],
+    "iv_percentile": 18,
+    "term_structure": "The last verified SPX 30-day ATM IV was 12.14% on October 9, with 60-day IV 12.82%, 90-day IV 13.17% and a 30-to-90-day slope of 1.085 (upward-sloping). The 12.1%-12.4% range is an indicative 30-day estimate based on the last observed 30-day and 42-day readings, not a live October 14 quote. The 18% IV percentile is from October 9. Premarket VIX 15.19 was a delayed early-morning indicative quote, not synchronized with the 08:30 CPI release."
+  }
+}
