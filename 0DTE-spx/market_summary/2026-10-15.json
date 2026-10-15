@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-15T08:26:42-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7718.94,
+      "daily_high": 7789.15,
+      "daily_low": 7693.31,
+      "open": 7774.18
+    },
+    "vix": 16.87,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 17.48,
+    "spx_future": -0.32
+  },
+  "gex_data": {
+    "net_gex_min": -40.47,
+    "net_gex_max": -27.63,
+    "gamma_regime": "Negative modeled dealer gamma. Signed net GEX estimates range from -$40.47B to -$27.63B per 1% SPX move across GEX Metrix, SquawkFlow, Sikuli Research and ZeroGEX, with different expiration coverage and model assumptions. October 14 closing SPX 7718.94 is below all reported gamma-flip levels.",
+    "gamma_flip": 7757,
+    "call_wall": 7900,
+    "put_wall": 7700,
+    "largest_negative_gamma_strike": 7700,
+    "largest_positive_gamma_strike": 7780
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Net short dealer gamma is indicated by multiple October 14 close and October 15 delayed SPX models. Reported zero-gamma flips range from 7740 (SquawkFlow) to 7787 (GEX Metrix); 7757 is Sikuli Research's October 14 close estimate. Dealer inventory signs are inferred from option open interest, not directly observed.",
+    "volatility_behavior": "In a negative-gamma regime, modeled dealer hedging can reinforce price moves and increase intraday volatility. October 14 SquawkFlow's near-spot heatmap shows the largest negative displayed strike exposure at 7700 (about -$5.9B per 1% move) and strongest positive displayed near-spot strike at 7780 (about +$0.76B); these are not full-chain maxima.",
+    "expected_behavior": "Watch 7700 as the nearest major negative-gamma concentration and put wall in near-term models, 7740-7787 as the model-dependent gamma-flip zone, and 7785 as SquawkFlow's volatility trigger. Broader-chain SquawkFlow call wall is 7900 and put wall 7500; ZeroGEX instead reports call wall 7800 and put wall 7700. S&P 500 futures are down about 0.32% before the open after October 14's inflation-driven selloff; PPI and retail-sales releases add event risk."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.47,
+    "put_call_ratio_volume": 1.23,
+    "skew": "October 14 SPX 25-delta implied-volatility skew was +0.050 under Options Analysis Suite's call-minus-put convention (calls richer than puts). Vendor sign conventions differ; this is not directly comparable to put-minus-call risk reversals.",
+    "zero_dte_dominance": "October 15 realized 0DTE volume share is not available before the open. SquawkFlow's October 14 close heatmap assigns about -$14.5B of displayed near-spot gamma to the October 15 expiration, versus -$32.8B across the displayed 10-expiration grid; this is gamma concentration, not a trading-volume share."
+  },
+  "volatility_surface": {
+    "vix": 17.48,
+    "iv_30d_range": [
+      12.9,
+      13.2
+    ],
+    "iv_percentile": 42.5,
+    "term_structure": "October 14 SPX ATM IV was 13.2% with IV rank 20.0% and IV percentile 42.5%. The 30-35 DTE ATM IV range was approximately 12.9%-13.2%; 1DTE and 2DTE were 15.0% and 14.6%, respectively, indicating elevated front-end event premium and a non-monotonic curve. Options Analysis Suite reported a -0.003 fitted term-structure slope. Premarket VIX 17.48 is an indicative early quote, not synchronized with the 08:26 ET futures reading."
+  }
+}
