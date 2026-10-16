@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-16T08:28:03-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7744.06,
+      "daily_high": 7754.15,
+      "daily_low": 7669.66,
+      "open": 7687.31
+    },
+    "vix": 16.46,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": null,
+    "spx_future": 0.16
+  },
+  "gex_data": {
+    "net_gex_min": -42.08,
+    "net_gex_max": 35.9,
+    "gamma_regime": "Mixed, model-dependent near the gamma flip. October 15 SPX model readings span -$42.08B (SquawkFlow repriced book) to +$35.9B (SquawkFlow full-chain heatmap) per 1% index move; Sikuli Research reports -$13.39B, ZeroGEX -$16.20B, and October 16 07:59 ET GEX Metrix +$9.81B. Different valuation methods, expirations, and observation times make these estimates non-interchangeable. Short-dated gamma is slightly positive above approximately 7723 in GEX Metrix, but several broader models remain negative.",
+    "gamma_flip": 7740,
+    "call_wall": 7750,
+    "put_wall": 7750,
+    "largest_negative_gamma_strike": 7700,
+    "largest_positive_gamma_strike": 7800
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Uncertain around spot 7744: observed model gamma-flip levels span roughly 7723 (October 16 GEX Metrix) to 7775 (October 15 Tapelab); 7740 is a central estimate, not a single-source print. Near-term 7750 call and put gamma walls differ from broader-chain call resistance around 7900 and put concentrations at 7700 or 7650. Dealer inventory is inferred from open interest rather than observed.",
+    "volatility_behavior": "If spot holds above the short-dated 7723-7740 transition, positive near-expiry gamma could favor pinning and mean reversion around 7750. A sustained move below 7723 and toward 7700 may expose negative-gamma pockets and amplify intraday swings. The October 16 monthly options expiration can rapidly change this positioning.",
+    "expected_behavior": "SPX rebounded to 7744.06 on October 15 after trading as low as 7669.66. October 16 S&P 500 futures were about +0.16% in the early premarket. Watch 7750 as the closest high-gamma strike, 7723-7755 as the contested transition band, 7700 as a large negative-gamma concentration, and 7800 as a nearby positive-gamma cluster. Broader-chain resistance is modeled near 7900. Technology and semiconductor weakness, rotation into defensives, and monthly options expiration create event and flow risk."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.48,
+    "put_call_ratio_volume": 1.14,
+    "skew": "October 15 SPX 25-delta skew was +0.043 under Options Analysis Suite's call-minus-put convention, indicating richer calls. Other vendors use put-minus-call skew, so signs cannot be compared directly.",
+    "zero_dte_dominance": "October 16 is monthly options expiration. In SquawkFlow's October 15 closing near-term strike/expiration grid, about 62% of displayed near-term gamma was assigned to the October 16 expiry, with the largest same-day positive gamma around 7750. This is a modeled gamma share, not the October 16 realized 0DTE volume share, which is unavailable before the open."
+  },
+  "volatility_surface": {
+    "vix": null,
+    "iv_30d_range": [
+      12.3,
+      12.6
+    ],
+    "iv_percentile": 26.2,
+    "term_structure": "October 15 SPX options chain shows ATM IV of 12.5% at 29 DTE (November 13), 12.3% at 32 DTE, 12.4% at 33 DTE, and 12.6% at 34 DTE, yielding an observed near-30-day range of 12.3%-12.6%. October 16 expiry had 13.2% ATM IV at the October 15 snapshot, versus 9.2% for October 19, showing an expiry-specific front-end premium. The vendor's fitted term-structure slope was -0.002, while longer-dated IV reached 13.3% at 64 DTE. October 15 IV percentile was 26.2%. VIX spot premarket was not verified; October 15 VIX closed at 16.46, and October 16 VIX futures were modestly lower."
+  }
+}
