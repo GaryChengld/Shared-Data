@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-19T08:35:34-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7659.44,
+      "daily_high": 7756.84,
+      "daily_low": 7631.77,
+      "open": 7745.32
+    },
+    "vix": 19.99,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 18.57,
+    "spx_future": 0.47
+  },
+  "gex_data": {
+    "net_gex_min": -49.63,
+    "net_gex_max": -30.8,
+    "gamma_regime": "Negative modeled dealer gamma. Estimates are USD billions of dollar gamma per 1% SPX move: GEX Metrix -49.63B (Oct 19, 06:00 ET), GammaFlip -37.2B (Oct 16 close), ZeroGEX -34.68B (Oct 16 close), and SquawkFlow heatmap -30.8B (Oct 16 close). Models and expiry coverage differ.",
+    "gamma_flip": 7812,
+    "call_wall": 7800,
+    "put_wall": 7650,
+    "largest_negative_gamma_strike": 7650,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled net short gamma at prior SPX close 7659.44. Gamma-flip estimates disagree materially: GammaFlip 7717, Tapelab 7720, ZeroGEX 7812, and GEX Metrix 7858; 7812 is the selected delayed SPX-specific estimate, not a confirmed consensus. Dealer positions are inferred from option open interest.",
+    "volatility_behavior": "Below the modeled gamma-flip band, dealer hedging may reinforce both rallies and declines, favoring larger intraday ranges and trend extension over stable mean reversion. This is a conditional positioning heuristic, not a forecast.",
+    "expected_behavior": "Premarket S&P 500 futures are approximately +0.47% versus prior settlement, rebounding after the Oct 16 AI/semiconductor-led selloff. Watch 7650 as a concentrated negative-gamma put strike, 7700 as a near-term pin/volume area, 7750-7800 as competing call-gamma resistance estimates, and 7717-7858 as the widely dispersed modeled flip zone. GEX Metrix places the broader call wall at 8000. The Oct 19 0DTE implied move is about +/-62 SPX points in one SPX-chain model. The rebound does not itself imply a positive-gamma regime."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.47,
+    "put_call_ratio_volume": 1.46,
+    "skew": "Oct 16 SPX 25-delta IV skew +0.063 under Options Analysis Suite's call-minus-put convention (calls richer); vendor conventions and expirations can differ.",
+    "zero_dte_dominance": "The Oct 19 expiry contributes approximately -$8.7B of modeled gamma in SquawkFlow's Oct 16 close heatmap, compared with -$30.8B across all expiries; these are signed gamma exposures, NOT a volume share. The Oct 19 realized 0DTE trading-volume share is not observable before the open. Flow Trade Pro also models -$8.7B for the Oct 19 0DTE expiry."
+  },
+  "volatility_surface": {
+    "vix": 18.57,
+    "iv_30d_range": [
+      14.2,
+      14.5
+    ],
+    "iv_percentile": 61.9,
+    "term_structure": "Oct 16 SPX end-of-day ATM IV was 14.3%, IV rank 26.6%, and IV percentile 61.9% (Options Analysis Suite). Near-30-day listed expiries Nov 16-20 (31-35 calendar days from Oct 16) showed 14.2%-14.5% ATM IV. Oct 19 expiry showed 11.4% IV in the same Oct 16 chain snapshot; fitted term-structure slope was approximately 0.000 (roughly flat), with short-tenor expiry variation. Premarket VIX 18.57 is an indicative early Oct 19 quote, not a synchronized official Cboe settlement."
+  }
+}
