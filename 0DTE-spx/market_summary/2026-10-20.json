@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-20T08:32:29-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7690.73,
+      "daily_high": 7731.18,
+      "daily_low": 7684.79,
+      "open": 7702.77
+    },
+    "vix": 18.44,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 18.54,
+    "spx_future": -0.15
+  },
+  "gex_data": {
+    "net_gex_min": -79.35,
+    "net_gex_max": -34.4,
+    "gamma_regime": "Negative modeled dealer gamma. Net GEX in USD billions per 1% SPX move: SquawkFlow -79.35B (Oct 19 repriced book based on Oct 16 settled OI), GEX Metrix -61.74B (Oct 20 07:45 ET, expiries through Nov 20), Sikuli Research -39.38B (Oct 19 near close), and GammaFlip -34.4B (Oct 19 close). Different expiration windows and models are not directly comparable.",
+    "gamma_flip": 7745,
+    "call_wall": 8000,
+    "put_wall": 7650,
+    "largest_negative_gamma_strike": 7650,
+    "largest_positive_gamma_strike": 8100
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled short dealer gamma at the prior SPX close of 7690.73. Near-spot flip estimates cluster at 7710 (SquawkFlow), 7730 (GammaFlip), 7745 (Tapelab, Oct 20 expiry), and 7756 (Sikuli Research); GEX Metrix's broader-window Oct 20 07:45 ET flip is materially higher at 7888. The selected 7745 is a near-spot cluster estimate, not a universal flip. Dealer inventory signs are inferred from option OI rather than observed.",
+    "volatility_behavior": "Below the model-dependent gamma-flip zone, dealer hedging can reinforce rallies and declines, increasing trend extension and intraday volatility. Large negative gamma around 7650 can accelerate downside if breached; near-term hedging can also create temporary pinning around 7700. The Oct 20 0DTE expected move from Tapelab is about +/-42.10 SPX points, based on delayed options quotes.",
+    "expected_behavior": "The Oct 19 SPX close was 7690.73 (+0.41%) despite negative NYSE market breadth. Oct 20 S&P 500 futures were approximately -0.15% versus prior settlement in a premarket report. Watch 7650 as the major negative-gamma concentration, 7700 as the closest contested put/call strike, 7710-7756 as the near-spot flip cluster, 7800 as intermediate overhead call gamma, and 7900-8100 as broad-model call-wall/positive-gamma resistance. GEX Metrix instead locates the wider-window flip at 7888. Higher oil prices, renewed AI-stock weakness, housing data, and large-cap earnings are potential volatility catalysts."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.47,
+    "put_call_ratio_volume": 1.17,
+    "skew": "Oct 19 SPX 25-delta IV skew was +0.055 under Options Analysis Suite's call-minus-put convention, indicating calls richer than comparable-delta puts. This convention differs from put-minus-call risk reversals and is not directly comparable.",
+    "zero_dte_dominance": "Oct 20 realized 0DTE volume share is unavailable before the open. Sikuli Research estimated 46% of its modeled SPX gamma in 0-1DTE and 73% in expiries within seven days on Oct 19; this is a gamma-exposure share, not a traded-volume share. SPX 0DTE generally accounts for a majority of SPX options volume, but no verified Oct 20 share is available."
+  },
+  "volatility_surface": {
+    "vix": 18.54,
+    "iv_30d_range": [
+      13.2,
+      13.5
+    ],
+    "iv_percentile": 46.8,
+    "term_structure": "Oct 19 SPX listed-expiry ATM IV: Nov 17 (29 DTE) 13.2%, Nov 18 (30 DTE) 13.4%, Nov 19 (31 DTE) 13.5%, Nov 20 (32 DTE) 13.5% (Options Analysis Suite). Oct 19 overall ATM IV was 13.4%, IV rank 21.2%, IV percentile 46.8%, and fitted term-structure slope +0.001 (approximately flat to mildly upward). Oct 20 (1 DTE from Oct 19 snapshot) ATM IV was 12.6%; Oct 23 (4 DTE) was 13.8%, showing expiry-specific front-end variation. Oct 20 premarket VIX 18.54 is an indicative quote from Investing.com and not synchronized with the futures percentage reading."
+  }
+}
