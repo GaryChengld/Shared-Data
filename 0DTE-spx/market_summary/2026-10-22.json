@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-22T08:28:21-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7757.17,
+      "daily_high": 7770.4,
+      "daily_low": 7709.34,
+      "open": 7736.43
+    },
+    "vix": 16.68,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 18.09,
+    "spx_future": -1.04
+  },
+  "gex_data": {
+    "net_gex_min": -41,
+    "net_gex_max": 63.53,
+    "gamma_regime": "Mixed and strongly model-dependent. October 21 close SquawkFlow full-chain heatmap estimated -$41.0B per 1% SPX move, Sikuli Research reported -$14.06B in its October 21 snapshot, GEX Metrix reported +$55.86B at 14:59 ET, and Options Analysis Suite reported +$63.53B at the close. These are not interchangeable because positioning assumptions, expiry coverage, and pricing inputs differ.",
+    "gamma_flip": 7706,
+    "call_wall": 7800,
+    "put_wall": 7650,
+    "largest_negative_gamma_strike": 7700,
+    "largest_positive_gamma_strike": 7800
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Disputed near the market: SquawkFlow's October 21 zero-gamma flip was 7706, Sikuli Research estimated 7741, and GEX Metrix estimated 7636. The selected 7706 is a recent full-chain reference, not a consensus. October 21 cash SPX closed at 7757.17, but an approximately -1.04% futures indication implies substantial risk of opening below the 7706 reference. Dealer positions are modeled from options open interest, not directly observed.",
+    "volatility_behavior": "A decline through 7706 and 7700 toward 7650 could enter a negative-gamma pocket and increase directional hedging feedback, particularly with rising VIX. Conversely, positive-gamma models indicate possible intraday mean reversion if SPX holds above 7750-7775. October 22 expiry positioning can change quickly after the open.",
+    "expected_behavior": "October 22 premarket S&P 500 futures were approximately -1.04% versus the prior settlement as technology and AI shares weakened after earnings and crude oil rose on Middle East tensions. Watch 7700 as a major negative-gamma and 0DTE volume concentration, 7650 as a broader put wall, 7750-7775 as near-spot put/call gamma concentrations, and 7800 as a nearby positive-gamma/call-wall cluster. SquawkFlow's broader call wall is 8100. The October 21 options snapshot implied roughly +/-54 SPX points for October 22 expiry, but the overnight futures decline already challenges that prior-close range."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.46,
+    "put_call_ratio_volume": 1.15,
+    "skew": "October 21 SPX 25-delta skew was +0.040 under Options Analysis Suite's call-minus-put convention, indicating richer calls. The latest separately verified all-expiry OI put/call ratio of 1.46 and volume put/call ratio of 1.15 are from the October 20 snapshot; October 21 updated all-expiry ratios were not independently confirmed.",
+    "zero_dte_dominance": "October 22 realized 0DTE volume share is unavailable before the open. SquawkFlow's October 21 closing near-term heatmap attributes about 39% of the displayed near-term modeled gamma to the October 22 expiration, with approximately -$19.1B signed gamma in the 0DTE column versus -$41.0B across the full chain. These are modeled gamma quantities, not traded-volume shares. Sikuli's October 21 snapshot attributed 31% of modeled gamma to 0-1DTE and 62% to expiries within seven days."
+  },
+  "volatility_surface": {
+    "vix": 18.09,
+    "iv_30d_range": [
+      12.9,
+      13.1
+    ],
+    "iv_percentile": 38.5,
+    "term_structure": "October 21 SPX ATM IV was 13.1%, IV rank 19.4%, IV percentile 38.5%, and 25-delta call-minus-put skew +0.040 (Options Analysis Suite). Listed near-30-day ATM IV was 13.0% at 28-29 DTE, 13.1% at 30 DTE, and 12.9%-13.1% at 33-35 DTE. October 22 1DTE ATM IV was 13.3%; the vendor's fitted slope was -0.002, approximately flat to mildly front-loaded. October 21 VIX closed 16.68, while the October 22 indicative 08:17 ET VIX was 18.09; November VIX futures near 18.77 indicated a futures premium. Quotes are not synchronized."
+  }
+}
