@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-23T08:31:35-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7663.43,
+      "daily_high": 7702.94,
+      "daily_low": 7637.36,
+      "open": 7694.62
+    },
+    "vix": 19.03,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": null,
+    "spx_future": -0.26
+  },
+  "gex_data": {
+    "net_gex_min": -59.33,
+    "net_gex_max": 32.68,
+    "gamma_regime": "Predominantly negative at the October 22 SPX close of 7663.43. Model estimates in USD billions of gamma per 1% index move: October 23 08:15 ET GEX Metrix -59.33B (through Nov 20); October 22 close Sikuli Research -43.73B; October 22 16:14 ET SquawkFlow full-chain heatmap -39.8B; October 22 SquawkFlow repriced-book morning estimate +32.68B. These figures differ in expiry coverage, pricing, snapshot time and dealer-sign assumptions; positive morning GEX does not establish positive gamma at the later close.",
+    "gamma_flip": 7741,
+    "call_wall": 8000,
+    "put_wall": 7700,
+    "largest_negative_gamma_strike": 7700,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Short-gamma positioning is the leading near-spot model interpretation. Published zero-gamma estimates include SquawkFlow 7711 (Oct 22 morning), Sikuli Research 7741 (Oct 22 close), Tapelab 7772.5 (Oct 22 for Oct 23 expiry), and GEX Metrix 7886 (Oct 23 08:15 ET, expiries through Nov 20). The selected 7741 is a recent near-spot reference, not a universal consensus. Actual dealer inventory is not observable from open interest.",
+    "volatility_behavior": "With SPX below the 7711-7773 near-spot gamma transition cluster and VIX having risen to 19.03 at the prior close, modeled short-gamma hedging could amplify intraday directional moves. A recovery above the transition band could reduce this effect; the wider-window GEX Metrix model remains negative below 7886. All dealer-flow implications are conditional.",
+    "expected_behavior": "SPX fell 1.21% to 7663.43 on October 22 as AI and semiconductor shares sold off, while broad S&P constituent breadth was positive. October 23 S&P 500 futures were about -0.26% versus prior settlement in an early premarket report. Watch 7650 as an expiry-specific gamma concentration, 7600 as the next large put-gamma strike, 7700 as a major put wall and potential reclaim level, 7711-7773 as the contested near-spot flip zone, and 7900-8000 as higher call-gamma resistance. Tapelab's Oct 23 ATM straddle implied a roughly +/-49.70-point move from the Oct 22 close. Rising crude oil prices, geopolitical risk, flash PMIs and consumer sentiment are potential volatility catalysts."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.47,
+    "put_call_ratio_volume": 1.17,
+    "skew": "October 22 SPX 25-delta skew was +0.056 using Options Analysis Suite's call-minus-put convention, implying richer calls under that vendor's definition. The latest independently verified all-expiry OI and volume put/call ratios, 1.47 and 1.17, are from October 21; October 22 all-expiry ratios were not verified. GEX Metrix's narrower Oct 23-Nov 20 OI window has 4,024,461 puts versus 1,986,229 calls (ratio approximately 2.03), which is not comparable to the all-expiry ratio.",
+    "zero_dte_dominance": "October 23 realized 0DTE volume share is not available before the open. Sikuli Research's October 22 close model assigns 49% of gamma to 0-1DTE and 64% to expiries within seven days. SquawkFlow's October 22 close near-term heatmap attributes approximately 39% of displayed near-term modeled gamma to the October 23 expiration. These are modeled gamma shares, not traded-volume shares."
+  },
+  "volatility_surface": {
+    "vix": null,
+    "iv_30d_range": [
+      15.1,
+      15.3
+    ],
+    "iv_percentile": 72.2,
+    "term_structure": "October 22 Options Analysis Suite SPX ATM IV was 15.1%, IV rank 31.3%, IV percentile 72.2%, 25-delta call-minus-put skew +0.056, and fitted term-structure slope -0.004 (mildly front-loaded). The 15.1%-15.3% indicative near-30-day IV range combines the SPX vendor's 15.1% ATM reading with a 15.3% November 20 SPY ATM IV cross-check at October 22 16:37 ET; the upper bound is an ETF proxy, not an independently observed SPX tenor quote. The separately accessible SPX listed-expiry table still reflects October 21 and should not be mistaken for an updated October 22 surface. VIX closed October 22 at 19.03; a reliable October 23 premarket VIX spot quote could not be verified. VIX futures direction is not a substitute for spot."
+  }
+}
