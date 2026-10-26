@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-26T08:40:26-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7623.68,
+      "daily_high": 7660.15,
+      "daily_low": 7612.07,
+      "open": 7637.18
+    },
+    "vix": 19.45,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 19.67,
+    "spx_future": 0.06
+  },
+  "gex_data": {
+    "net_gex_min": -55.16,
+    "net_gex_max": -36.3,
+    "gamma_regime": "Negative modeled dealer gamma. October 23 SPX estimates in USD billions of gamma per 1% index move: GEX Metrix -55.16B (16:44 ET, expiries through Nov 20), GammaFlip -49.2B (close, all expiries), I Love Vol -47.4B (close, all expiries), SquawkFlow -47.71B (08:15 ET repriced settled book) and -36.3B (16:14 ET delayed-chain heatmap), Sikuli Research -45.36B (15:55 ET), and Options Analysis Suite -36.39B (close). The range combines different dealer-sign assumptions, expirations, and snapshot times; October 26 updated gamma was not yet verified.",
+    "gamma_flip": 7703,
+    "call_wall": 8000,
+    "put_wall": 7600,
+    "largest_negative_gamma_strike": 7600,
+    "largest_positive_gamma_strike": 8100
+  },
+  "dealer_positioning": {
+    "gamma_regime": "At the October 23 SPX close of 7623.68, the index was below the near-spot gamma-flip cluster: SquawkFlow 7691, GammaFlip 7703, I Love Vol 7704, and Sikuli Research 7729. The selected 7703 is a cluster estimate, not a universal level. GEX Metrix's narrower expiry window estimated a materially higher flip of 7955; StockBotty's 31-day model estimated 7657.38. Dealer inventories are inferred from options open interest, not directly observed.",
+    "volatility_behavior": "Below the 7691-7729 near-spot flip band, negative modeled gamma implies potentially procyclical dealer hedging: selling into declines and buying into rallies, increasing intraday trend and gap-follow-through risk. The 7600 put-gamma cluster and 7500 broader negative-gamma peak could amplify downside if broken. A sustained reclaim of the flip band may reduce hedging feedback, but wider-window models disagree.",
+    "expected_behavior": "SPX declined 0.52% to 7623.68 on Friday, October 23, while VIX closed at 19.45 and broad market participation was weak. October 26 premarket S&P 500 futures were reported approximately +0.06% versus prior settlement, with other early reports ranging roughly +0.2% to +0.3%; premarket VIX was about 19.67 at 08:16 ET. Watch 7600 as the nearest widely cited put wall, 7500 as a deeper negative-gamma peak, 7650-7700 as the initial recovery zone, 7691-7729 as the contested gamma transition, and 7800-8000 as overhead call concentrations. Falling crude prices offer some relief, while the October 28 Federal Reserve decision, mega-cap technology earnings, inflation data, and Middle East developments are major event risks."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.48,
+    "put_call_ratio_volume": 1.25,
+    "skew": "October 23 SPX 25-delta skew was +0.059 under Options Analysis Suite's call-minus-put convention, indicating richer calls under that vendor's definition. This is not comparable without sign adjustment to put-minus-call risk reversals. StockBotty separately reported 31-day skew +5.50 volatility points for its own tenor and methodology.",
+    "zero_dte_dominance": "October 26 realized SPX 0DTE volume share cannot be observed before the opening session. Sikuli Research's October 23 close model attributed 45% of modeled gamma to 0-1DTE and 82% to expiries within seven days; these are gamma shares, not traded-volume shares. SquawkFlow's October 23 close heatmap showed about -$1.5B signed gamma for the October 26 expiration versus -$36.3B across its full-chain model. Signed gamma totals are not directly interpretable as an unsigned dominance percentage."
+  },
+  "volatility_surface": {
+    "vix": 19.67,
+    "iv_30d_range": [
+      14.8,
+      15
+    ],
+    "iv_percentile": 71,
+    "term_structure": "October 23 SPX end-of-day ATM IV was 14.9%, IV rank 30.5%, IV percentile 71.0%, 25-delta call-minus-put skew +0.059, and fitted term-structure slope +0.001 (approximately flat) in Options Analysis Suite. Its listed expiries around 31-35 calendar days from October 23 showed Nov 23 14.8%, Nov 24 14.9%, Nov 25 15.0%, and Nov 27 14.8% ATM IV. The October 26 expiry showed 10.8% IV in the October 23 snapshot, while October 30 showed 16.2%, indicating significant expiry-specific short-end variation. StockBotty independently reported approximately 15.0% ATM IV at 31 days. October 23 VIX closed 19.45; October 26 indicative premarket VIX was 19.67 at 08:16 ET versus November VIX futures around 19.37 at 08:26 ET, a slight inversion in non-synchronized quotes."
+  }
+}
