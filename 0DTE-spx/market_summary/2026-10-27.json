@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-27T08:34:22-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7676.77,
+      "daily_high": 7702.13,
+      "daily_low": 7639.7,
+      "open": 7639.7
+    },
+    "vix": 18.39,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": null,
+    "spx_future": 0.28
+  },
+  "gex_data": {
+    "net_gex_min": -38.97,
+    "net_gex_max": 6.87,
+    "gamma_regime": "Predominantly negative modeled SPX dealer gamma, with substantial model and expiry differences. USD billions of gamma per 1% SPX move: SquawkFlow Oct 27 08:15 ET repriced full-chain -38.97B; Sikuli Research Oct 26 15:55 ET -32.85B; GEX Metrix Oct 27 08:14 ET through Nov 20 -18.81B; Options Analysis Suite Oct 26 close all-expiry -14.95B; FlowMonkey Oct 26 close -17.36B; SquawkFlow Oct 26 16:14 ET delayed-chain heatmap +0.398B; GammaTape Oct 26 15:59 ET SPXW 0DTE +6.87B. The observed range is not a synchronized or methodologically comparable confidence interval.",
+    "gamma_flip": 7728,
+    "call_wall": 8000,
+    "put_wall": 7650,
+    "largest_negative_gamma_strike": 7650,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "The Oct 26 SPX close of 7676.77 was below the near-spot modeled gamma flips at 7687 (SquawkFlow Oct 27 morning), 7728 (Sikuli Oct 26 close), and 7761 (GEX Metrix Oct 27 morning). The selected 7728 is the middle of those observations, not a universal boundary. Call walls vary from 7800 (Sikuli) to 8000 (GEX Metrix) and 8100 (SquawkFlow); put walls range from 7600 to 7700. Actual dealer positions are inferred from open interest rather than directly observed.",
+    "volatility_behavior": "Below the 7687-7761 transition band, short-gamma hedging can amplify intraday rallies and declines. Near 7650, the Oct 26 SquawkFlow strike-expiry heatmap shows approximately -6.1B of signed gamma in its displayed near-spot grid; 7700 also carries substantial put-side gamma. A sustained recovery through the flip band could favor more two-sided or mean-reverting trading, although vendor models disagree.",
+    "expected_behavior": "Oct 27 S&P 500 futures were approximately +0.28% versus prior settlement in premarket reporting after SPX rose 0.70% to 7676.77 on Oct 26. Watch 7650 as a negative-gamma concentration, 7700 as an active put/call strike, 7687-7761 as the disputed gamma transition band, 7800 as nearer overhead call gamma, and 8000-8100 as broader call-wall resistance. The Oct 26 options snapshot implies an Oct 27 one-day range of approximately 7628-7725 (about +/-49 SPX points) from a prior-close reference; it is not a forecast or a futures-adjusted range. The Oct 27-28 FOMC meeting, earnings from major technology companies, elevated oil prices, and Middle East developments are potential volatility catalysts."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.48,
+    "put_call_ratio_volume": 1.1,
+    "skew": "Oct 26 SPX 25-delta skew was +0.051 under Options Analysis Suite's call-minus-put convention (calls richer by its measure). Options Skew Analytics reported a +5.99 volatility-point put-minus-call 30-day risk reversal for Oct 23, reflecting a different date, tenor and sign convention. The 1.48 put/call open-interest ratio is the latest separately verified all-expiry reading from Oct 23; the 1.10 volume ratio is stated on Options Analysis Suite's Oct 26 SPX gamma page.",
+    "zero_dte_dominance": "Oct 27 realized 0DTE volume share is unavailable before the open. Sikuli Research's Oct 26 15:55 ET SPX model attributes 41% of modeled gamma to 0-1DTE and 81% to expirations within seven days; these are gamma-exposure shares, not volume shares. SquawkFlow's Oct 26 close heatmap assigns approximately -$160M signed gamma to the Oct 27 expiration in its displayed strike grid, which must not be interpreted as a volume percentage."
+  },
+  "volatility_surface": {
+    "vix": null,
+    "iv_30d_range": [
+      14,
+      14.2
+    ],
+    "iv_percentile": 60.3,
+    "term_structure": "Oct 26 SPX end-of-day ATM IV was 14.2%, IV rank 26.1%, IV percentile 60.3%, 25-delta call-minus-put skew +0.051, and fitted term-structure slope -0.002 (approximately flat to mildly front-loaded) in Options Analysis Suite. Listed near-30-day ATM IV: Nov 23 (28 DTE) 14.0%, Nov 24 (29 DTE) 14.1%, Nov 25 (30 DTE) 14.2%, and Nov 27 (32 DTE) 14.0%. The Oct 27 one-day expiry carried 12.1% ATM IV in the Oct 26 snapshot versus Oct 30 four-day expiry at 16.2%, reflecting event/expiry variation. Oct 26 VIX closed at 18.39; no reliable synchronized Oct 27 premarket VIX spot quote was verified. VIX futures percentage changes are not a spot VIX quote."
+  }
+}
