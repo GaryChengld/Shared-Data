@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-28T08:32:40-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7722.6,
+      "daily_high": 7736.24,
+      "daily_low": 7677.16,
+      "open": 7699.47
+    },
+    "vix": 17.52,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 17.41,
+    "spx_future": 0.21
+  },
+  "gex_data": {
+    "net_gex_min": -38.97,
+    "net_gex_max": 33.02,
+    "gamma_regime": "Mixed across models and snapshot times, with several close-based and October 28 premarket models positive. USD billions of modeled dealer gamma per 1% SPX move: SquawkFlow October 27 08:15 ET repriced book -38.97B (October 26 settled OI); Sikuli October 27 15:55 ET -1.48B; GammaFlip October 27 close +14.0B; SquawkFlow October 27 close heatmap +18.3B; FlowMonkey October 27 close +23.55B; Options Analysis Suite October 27 close +29.46B; Obelion October 27 close +33.02B; GEX Metrix October 28 08:00 ET +9.23B through November 20. The observed range combines non-comparable models, expiration sets and times; the older negative reading does not describe the current book.",
+    "gamma_flip": 7707,
+    "call_wall": 7800,
+    "put_wall": 7700,
+    "largest_negative_gamma_strike": 7600,
+    "largest_positive_gamma_strike": 8100
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Near-spot transition with modest positive-gamma bias at the October 27 SPX close of 7722.60. GEX Metrix October 28 08:00 ET zero-gamma flip 7707; October 27 GammaFlip 7706, Obelion approximately 7706, Tapelab October 28 expiry 7725, Sikuli 7729, and FlowMonkey 7787.5. SquawkFlow's prior-session settlement model used 7687. The selected 7707 is the freshest SPX-specific premarket estimate. Dealer inventory signs are inferred from option open interest, not observed.",
+    "volatility_behavior": "If cash SPX remains above roughly 7700-7729, positive-gamma hedging in several models could encourage intraday pinning or mean reversion. A sustained move below 7700 and toward 7650 or 7600 may encounter negative-gamma concentrations and increase directional hedging feedback. Model disagreement and same-day expiration make these conditional scenarios.",
+    "expected_behavior": "October 27 SPX gained 0.60% to 7722.60, led by AI and semiconductor shares, while S&P 500 constituent breadth was slightly negative (245 advancing versus 257 declining). October 28 December E-mini S&P 500 futures were +0.21% versus their previous close at 08:15 ET; VIX was 17.41 at 08:24 ET. Watch 7700-7707 as immediate put-gamma/flip support, 7650 and 7600 as deeper negative-gamma zones, 7725-7750 as a contested pin/transition area, and 7800 as the nearest major call wall; broader positive gamma clusters at 8000-8100. The October 28 expiry ATM straddle implied approximately +/-46.70 SPX points from the prior close. The Federal Reserve decision, Microsoft and Alphabet earnings, and renewed oil-price inflation concerns can override static gamma levels."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.53,
+    "put_call_ratio_volume": 1.86,
+    "skew": "The latest independently verified SPX 25-delta skew was +0.051 on October 26 under Options Analysis Suite's call-minus-put convention. In Obelion's October 27 delayed October 28-expiry near-ATM grid, put IV exceeded call IV by approximately 0.1-0.3 volatility points across listed strikes; this is strike-specific and not a 25-delta risk reversal. The October 27 25-delta skew was not independently confirmed.",
+    "zero_dte_dominance": "October 28 realized SPX 0DTE volume share is unavailable before the open. Sikuli Research's October 27 15:55 ET model attributed 45% of gamma to 0-1DTE and 81% to expirations within seven days; these are modeled gamma shares, not trading-volume shares. The October 28 expiry had 212573 put contracts and 172433 call contracts traded in Obelion's October 27 snapshot; this is prior-session activity in today's expiry, not today's realized 0DTE volume."
+  },
+  "volatility_surface": {
+    "vix": 17.41,
+    "iv_30d_range": [
+      13.3,
+      14
+    ],
+    "iv_percentile": 60.3,
+    "term_structure": "October 27 SPX close options snapshots showed near-30-day ATM IV of 13.8% at November 25 (29 DTE), 13.4% at November 27 (31 DTE), and 13.3% at November 30 (34 DTE) in Options Analysis Suite; Obelion quoted 14.0% for November 25. October 28 1DTE ATM IV was 14.7%-14.8%, October 29 2DTE 15.9%, and October 30 3DTE 15.8%-16.0%, showing front-end event premium ahead of the Federal Reserve and mega-cap earnings. Options Analysis Suite described a fitted term-structure slope of -0.004. The 60.3% IV percentile and +0.051 25-delta skew are the latest separately verified October 26 readings, not October 27 updates. VIX closed October 27 at 17.52 and was quoted at 17.41 at 08:24 ET October 28; futures and VIX observations are not synchronized."
+  }
+}
