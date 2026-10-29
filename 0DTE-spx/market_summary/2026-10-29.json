@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-10-29T08:32:16-04:00",
+  "previous_day": {
+    "spx": {
+      "close": 7743.98,
+      "daily_high": 7758.43,
+      "daily_low": 7718.37,
+      "open": 7735.56
+    },
+    "vix": 16.91,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 17.19,
+    "spx_future": -0.3
+  },
+  "gex_data": {
+    "net_gex_min": -16.57,
+    "net_gex_max": 29.91,
+    "gamma_regime": "Mixed, with a negative-gamma risk near the expected open. SPX model estimates in USD billions of dealer gamma per 1% SPX move: GEX Metrix -16.57B (Oct 29 07:59 ET; expirations through Nov 20), SquawkFlow +3.7B (Oct 28 16:14 ET full-chain heatmap), Sikuli Research +5.81B (Oct 28 15:55 ET), GammaFlip +29.4B (Oct 28 close, all expirations), and Options Analysis Suite +29.91B (Oct 28 close, all expirations). Differences reflect expiration windows, dealer-side assumptions, snapshot times, and pricing models; the range is not a statistical confidence interval.",
+    "gamma_flip": 7733,
+    "call_wall": 7800,
+    "put_wall": 7700,
+    "largest_negative_gamma_strike": 7700,
+    "largest_positive_gamma_strike": 8100
+  },
+  "dealer_positioning": {
+    "gamma_regime": "October 28 cash SPX closed at 7743.98. Modeled flip estimates range from Tapelab 7670 (Oct 29 expiry), SquawkFlow 7690 (Oct 28 close), GammaFlip 7711 (Oct 28 close), Sikuli 7733 (Oct 28 close), GEX Metrix 7775 (Oct 29 07:59 ET). The selected 7733 is a near-spot middle estimate, not a universal boundary. The newest GEX Metrix snapshot is negative; several previous-close full-chain models are positive. Dealer inventory is inferred from open interest, not directly observed.",
+    "volatility_behavior": "Above roughly 7733-7775, positive-gamma models imply hedging that can dampen moves or pin strikes. A futures-indicated lower opening near or below the transition band could expose short-gamma behavior, with dealers potentially reinforcing declines and rallies. The 7700 strike carries the largest near-spot negative modeled gamma in the SquawkFlow heatmap (-6.1B across the displayed expirations); a break below 7700 could increase downside fragility. These are conditional heuristics.",
+    "expected_behavior": "October 28 SPX closed at 7743.98 (+0.28%) after the Federal Reserve held rates steady. October 29 S&P 500 futures were approximately -0.30% versus prior settlement in early premarket reports, while indicative VIX was 17.19 at 07:59 ET. Alphabet fell sharply after earnings on AI-spending and search concerns, partially offset by Microsoft strength. Watch 7700 as the major put-gamma concentration, 7725-7750 as a contested near-spot pivot, 7775-7800 as overhead gamma-flip/call-wall resistance, and 8000-8100 as broader call-gamma concentrations. Tapelab's Oct 29 expiry ATM straddle implied about +/-48.95 SPX points from the Oct 28 close; this is not a forecast. US inflation/GDP data and upcoming Amazon/Intel earnings can override static positioning levels."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.94,
+    "put_call_ratio_volume": 1.03,
+    "skew": "October 28 Options Analysis Suite SPX 25-delta call-minus-put skew was +0.045 (calls richer by its convention). I Love Vol separately reports a 30-day 25-delta put-minus-call risk reversal of +4.3 volatility points; the sign, tenor, and methodology differ. The 1.94 put/call OI ratio is calculated from GEX Metrix's Oct 29 07:59 ET overnight OI of 3,699,880 puts / 1,907,715 calls for expirations through Nov 20, NOT all-expiration SPX OI; the latest separately verified all-expiration ratio was 1.52 on Oct 27. The volume ratio 1.03 is from Oct 28 SPX options volume (1,804,522 puts / 1,756,142 calls) in Options Database.",
+    "zero_dte_dominance": "October 29 realized SPX 0DTE trading-volume share is unavailable before the open. Sikuli Research estimated 41% of modeled gamma in 0-1DTE and 80% within seven days at the October 28 close; these are gamma shares, not volume shares. SquawkFlow's October 28 close strike-expiration grid shows about -$4.7B signed gamma for the Oct 29 expiry across displayed near-spot strikes, versus +$3.7B across its full-chain model; signed exposures cannot be interpreted as a volume-share percentage."
+  },
+  "volatility_surface": {
+    "vix": 17.19,
+    "iv_30d_range": [
+      12.9,
+      13.3
+    ],
+    "iv_percentile": 37.7,
+    "term_structure": "October 28 Options Analysis Suite SPX ATM IV was 13.1%, IV rank 19.4%, IV percentile 37.7%, and fitted term-structure slope -0.002 (near-flat to slightly front-loaded). Listed near-30-day ATM IV was Nov 27 (30 DTE) 13.1%, Nov 30 (33 DTE) 12.9%, Dec 1 (34 DTE) 13.0%, and Dec 2 (35 DTE) 13.3%; the Oct 29 1DTE expiry was 16.4% and Oct 30 2DTE 15.7%, indicating front-end event premium. I Love Vol's independent Oct 28 close surface reports 1M ATM IV 13.2%, 3M 14.3%, 1M put-minus-call 25-delta risk reversal +4.3 vol points, and 21-day realized volatility 9.7%. October 28 VIX closed 16.91; October 29 indicative premarket VIX was 17.19 at 07:59 ET. VIX and ES quotes are not synchronized."
+  }
+}
