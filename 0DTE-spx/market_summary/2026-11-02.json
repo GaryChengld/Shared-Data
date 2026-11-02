@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-02T08:45:27-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7580.07,
+      "daily_high": 7637.48,
+      "daily_low": 7527.56,
+      "open": 7631.07
+    },
+    "vix": 19.42,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 18.84,
+    "spx_future": 0.4
+  },
+  "gex_data": {
+    "net_gex_min": -53.9,
+    "net_gex_max": -40.01,
+    "gamma_regime": "Negative dealer gamma across the major all-expiration SPX models at the October 30 close. USD billions of modeled dollar delta per 1% SPX move: I Love Vol -53.9B, Obelion approximately -52.99B, Sikuli Research -51.61B, SquawkFlow heatmap approximately -42.5B, and Options Analysis Suite -40.01B. GEX Metrix November 2 07:45 ET shows -42.05B for expirations through November 20. Model estimates differ by expiration coverage, implied volatility inputs and dealer-side assumptions; none directly observes dealer inventory.",
+    "gamma_flip": 7699,
+    "call_wall": 7700,
+    "put_wall": 7600,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Negative gamma at the previous SPX cash close of 7580.07. The selected 7699 gamma flip is the median of five SPX-specific estimates: Obelion approximately 7655, I Love Vol all-expiration 7689, SquawkFlow 7699, Sikuli Research 7733, and GEX Metrix November 2 07:45 ET 7801. These are different models and time windows, not a precise common threshold. I Love Vol identifies 7500 as the largest negative net-gamma strike (-8.3B) and 8000 as the largest positive (+3.2B).",
+    "volatility_behavior": "Below the model-dependent 7655-7801 flip region, short-gamma hedging may amplify both selloffs and rebounds rather than dampen them. The 7600 near-spot put concentration, 7520-7500 downside cluster and 7700 overhead call concentration are potential hedging-sensitive levels. A move above the lower flip estimates does not guarantee positive gamma because higher estimates remain near 7733-7801.",
+    "expected_behavior": "Following Friday October 30 SPX -1.82% and a technology-led selloff, November 2 S&P 500 futures were approximately +0.40% versus prior settlement in a premarket report, while an indicative VIX quote was 18.84 at 05:14 EST. Falling crude prices and tentative US-Iran diplomatic progress supported a rebound attempt, but AI capital-expenditure concerns persist. Watch 7600, 7650-7700, 7500 and 7520; broader overhead 7733-7801. The November 2 SPX ATM straddle implied roughly 55-66 index points across delayed vendors, not a forecast. October ISM manufacturing is scheduled at 10:00 ET; the November 3 midterm elections and November 6 jobs report add event risk. Avoid assuming a sustained trend from the futures indication alone."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.52,
+    "put_call_ratio_volume": 1.35,
+    "skew": "October 30 SPX one-month 25-delta put-minus-call risk reversal was +5.6 volatility points in I Love Vol, the 69th percentile of its one-year sample. Options Analysis Suite separately reported +0.063 for its 25-delta call-minus-put convention; these definitions and scales are not directly comparable. Obelion's all-expiration put/call open-interest ratio was 1.52 (11,254,256 puts / 7,390,421 calls), and its prior-session volume ratio was 1.35 (1,478,869 puts / 1,091,676 calls).",
+    "zero_dte_dominance": "November 2 realized SPX 0DTE volume share is not yet observable before the opening session. Sikuli Research's October 30 15:55 ET model attributed 45% of gamma to 0-1DTE and 66% to expirations within seven days; these are gamma shares, not trading-volume shares. Obelion reports 398,172 puts and 222,723 calls traded on October 30 in contracts expiring November 2 (put/call volume approximately 1.79). I Love Vol estimates -29.1B of SPX gamma in the next seven calendar days, about 54% of its -53.9B all-expiration total."
+  },
+  "volatility_surface": {
+    "vix": 18.84,
+    "iv_30d_range": [
+      14.9,
+      15.7
+    ],
+    "iv_percentile": 80.2,
+    "term_structure": "October 30 SPX one-month ATM IV was 14.9% in I Love Vol, with three-month IV 15.3% (normal upward slope of +0.4 volatility points from 1M to 3M). Options Analysis Suite reported near-30-day listed ATM IV approximately 15.6%-15.7%, overall ATM IV 15.7%, IV rank 35.2% and IV percentile 80.2%. Obelion reported December 1 ATM IV around 15.3%, with much higher November 2 front-expiry IV near 19%, although vendor snapshots vary. I Love Vol's October 30 VIX futures settlements were November 20.36 versus December 19.79, a locally inverted front futures curve; this is distinct from the slightly upward 1M-to-3M SPX ATM IV curve. VIX spot closed October 30 at 19.42; the latest independently verified premarket spot indication was 18.84 at 05:14 EST November 2. The SPX futures and VIX quotes are not synchronized."
+  }
+}
