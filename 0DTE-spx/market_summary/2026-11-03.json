@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-03T08:30:02-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7541.4,
+      "daily_high": 7662.23,
+      "daily_low": 7539.38,
+      "open": 7610.83
+    },
+    "vix": 21.15,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 21.45,
+    "spx_future": -0.17
+  },
+  "gex_data": {
+    "net_gex_min": -81.16,
+    "net_gex_max": -55.66,
+    "gamma_regime": "Negative across November 2 close and November 3 premarket SPX-specific models. Dealer gamma estimates in USD billions per 1% SPX move: Obelion -81.16B (November 2 close, all expirations; vendor snapshots vary), SquawkFlow -77.73B (November 2 published full-chain book based on October 30 settled OI), GEX Metrix -75.57B (November 3 04:00 ET, through November 20), and Sikuli Research -55.66B (November 2 15:55 ET). Differences reflect coverage, model assumptions and timing. Tapelab separately estimates -38.4M for the November 3 expiry only, not comparable to the billion-dollar all-expiry range.",
+    "gamma_flip": 7666,
+    "call_wall": 7800,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 7800
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Negative gamma with SPX 7541.40 below all observed model flip estimates: Tapelab 7615 (November 3 expiry), SquawkFlow 7653 (November 2 close), Obelion approximately 7638-7666 (November 2 close snapshots), Sikuli 7707 (November 2 15:55 ET), and GEX Metrix 7900 (November 3 04:00 ET). The selected 7666 is a representative near-spot cluster estimate, not a single agreed market level. Dealer holdings are inferred from open interest.",
+    "volatility_behavior": "Below the near-spot 7615-7707 flip band, modeled short-gamma hedging may reinforce intraday momentum and widen swings in either direction. 7500 is a shared near-spot put wall; 7600 is a nearby call concentration in the November 3 expiry, with 7700-7800 additional overhead gamma clusters. A sustained reclaim of 7615-7666 may reduce amplification in some models, but the wider GEX Metrix model remains negative below 7900.",
+    "expected_behavior": "SPX declined 0.51% on Monday November 2 to 7541.40 after trading between 7539.38 and 7662.23. Tuesday November 3 S&P 500 futures were indicated down approximately 0.17% against previous settlement, while the latest located VIX indication was 21.45; the observations are not synchronized. US midterm elections, technology-sector repricing and upcoming earnings create event risk. Watch 7500-7510 as immediate put-wall support, 7540-7600 as the near-spot trading band, 7615-7666 as initial gamma-flip resistance, and 7700-7800 above. The November 3 ATM straddle implied a vendor-dependent move of approximately 46-67 SPX points from the prior close; it is not a directional forecast."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.51,
+    "put_call_ratio_volume": 1.34,
+    "skew": "The latest verified November 2 Obelion near-ATM November 3 strike grid showed call and put IV nearly equal at 7540 (both about 23.1%), with differences of roughly 0.0-0.1 volatility point across displayed strikes. This is a strike-specific near-ATM observation, not a 25-delta risk reversal. The latest separately verified SPX 25-delta call-minus-put skew from Options Analysis Suite was +0.063 on October 30; no November 2 25-delta update was independently confirmed.",
+    "zero_dte_dominance": "The November 3 0DTE realized volume share is unavailable before the open. Sikuli Research estimated 39% of modeled gamma in 0-1DTE and 59% in expirations within seven days at November 2 15:55 ET. These are gamma exposure shares, not traded-volume shares. Obelion recorded 291945 puts and 219319 calls traded on November 2 in contracts expiring November 3, a put/call volume ratio of 1.33 for that expiration; this is prior-session activity, not today's 0DTE volume."
+  },
+  "volatility_surface": {
+    "vix": 21.45,
+    "iv_30d_range": [
+      16.6,
+      16.8
+    ],
+    "iv_percentile": 86.5,
+    "term_structure": "November 2 SPX 30-day ATM IV was approximately 16.6% in Options Analysis Suite and 16.8% for the December 2 expiry in Obelion. Options Analysis Suite reported IV percentile 86.5% and IV rank 40.7%, versus 20-day realized volatility 11.5%. Obelion's November 3 ATM IV was about 23.1%, with November 4 near 24.4%, substantially above December 2 at 16.8%, showing short-dated event premium and an inverted front-to-one-month SPX options curve. VIX closed November 2 at 21.15; the latest located November 3 premarket VIX indication was 21.45. VIX futures and spot VIX are different instruments."
+  }
+}
