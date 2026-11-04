@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-04T08:30:14-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7568.92,
+      "daily_high": 7594.61,
+      "daily_low": 7545.39,
+      "open": 7552.92
+    },
+    "vix": 20.83,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 18.34,
+    "spx_future": 0.87
+  },
+  "gex_data": {
+    "net_gex_min": -91.58,
+    "net_gex_max": -21.99,
+    "gamma_regime": "Negative in all checked SPX models. USD billions of modeled dealer gamma per 1% SPX move: SquawkFlow -91.58B (Nov 3 08:15 ET, Nov 2 settled OI; stale for Nov 4), Obelion -80.54B (Nov 3 close, all expirations), I Love Vol -49.3B (Nov 3 close, all expirations), Sikuli Research -42.84B (Nov 3 15:55 ET), and GEX Metrix -21.99B (Nov 4 05:15 ET, expirations through Nov 20). The range mixes models, dates and expiration windows; it is not a confidence interval.",
+    "gamma_flip": 7663,
+    "call_wall": 7700,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Negative gamma at the Nov 3 SPX close of 7568.92. Observed flip estimates include Tapelab 7620 (Nov 4 expiry only), SquawkFlow 7638 (Nov 3 book), Obelion 7649.82 (Nov 3 close), I Love Vol 7663 (Nov 3 close), Sikuli 7694 (Nov 3 close), and GEX Metrix 7718 (Nov 4 05:15 ET). The selected 7663 is a representative full-chain close-based estimate; the current morning model places the flip higher. Dealer inventory is inferred from OI rather than observed.",
+    "volatility_behavior": "Below the 7620-7718 model flip band, negative-gamma hedging may amplify intraday moves in either direction. A futures-led rally toward 7650-7700 could meet a transition area, not guaranteed resistance. A sustained recovery above the higher 7718 flip may reduce hedging feedback in the latest short-window model. A decline through 7575 and 7500 could increase downside sensitivity.",
+    "expected_behavior": "Nov 3 SPX rose 0.36% to 7568.92. Nov 4 premarket S&P 500 futures were up approximately 0.87% versus previous settlement in a 07:42 ET report, following the US midterm election results; an earlier VIX indication was 18.34, down from the Nov 3 close of 20.83. Watch 7575 and 7500 on the downside; 7620-7663 as the first gamma transition band; 7700-7725 as overhead call-gamma/flip levels; and 7800-8000 as more distant concentrations. The Nov 4 expiry's prior-close implied move was approximately 86-105 SPX points across vendors, not a forecast. Election headlines and the premarket ADP employment release can overwhelm static gamma estimates."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.5,
+    "put_call_ratio_volume": 1.35,
+    "skew": "The latest verified SPX 25-delta skew reading was +0.066 from Options Analysis Suite on Nov 2, under that vendor's call-minus-put convention; a Nov 3 update could not be confirmed. This should not be interpreted as the conventional put-minus-call 25-delta risk reversal.",
+    "zero_dte_dominance": "Nov 4 realized 0DTE volume share is unavailable before the opening session. Sikuli Research attributed 42% of modeled SPX gamma to 0-1DTE and 61% to expirations within seven days at the Nov 3 close. I Love Vol estimated -22.9B of gamma within seven days versus -49.3B all expirations (approximately 46% by magnitude). These are gamma exposure shares, not trading-volume shares. Obelion's Nov 3 session recorded 200784 puts and 168750 calls traded in contracts expiring Nov 4 (put/call volume approximately 1.19 for that expiry)."
+  },
+  "volatility_surface": {
+    "vix": 18.34,
+    "iv_30d_range": [
+      16.1,
+      16.5
+    ],
+    "iv_percentile": 86.5,
+    "term_structure": "Nov 3 SPX options snapshots indicate approximately 16.1%-16.5% near-30-day ATM IV: Options Analysis Suite's 30-day implied move of 4.62% implies approximately 16.1% annualized using sqrt(30/365), while Obelion quotes 16.5% for Dec 3. Obelion's Nov 4 one-day ATM IV was approximately 25.9%-26.8%, versus 16.5% at 30 days, indicating strongly front-loaded event premium. The latest verified IV percentile was 86.5% on Nov 2 from Options Analysis Suite, not an independently verified Nov 3 update. Nov 3 VIX close was 20.83; the early Nov 4 indicative spot VIX was 18.34. Quotes are not synchronized."
+  }
+}
