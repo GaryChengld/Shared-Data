@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-05T08:30:00-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7688.62,
+      "daily_high": 7715.57,
+      "daily_low": 7635.81,
+      "open": 7635.81
+    },
+    "vix": 16.61,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 16.79,
+    "spx_future": 0.16
+  },
+  "gex_data": {
+    "net_gex_min": 13.35,
+    "net_gex_max": 40.26,
+    "gamma_regime": "Predominantly positive in November 4 closing SPX-specific models, in USD billions per 1% SPX move: Obelion +13.35B to +29.02B across public snapshots, GammaFlip +18.5B, GEX Metrix +30.11B (November 4 14:15 ET; expiries through November 20), and FlowMonkey +40.26B. SquawkFlow's -67.68B was calculated at November 4 08:15 using November 3 settled open interest and prior spot, so is excluded from the closing-snapshot range. Different methodologies and expiry sets are not directly comparable.",
+    "gamma_flip": 7667,
+    "call_wall": 7700,
+    "put_wall": 7510,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Mildly positive near the November 4 SPX close of 7688.62. November 4 close-based gamma flip estimates cluster at 7660 (Tapelab November 5 expiry), 7664 (GammaFlip), 7667-7669 (Obelion), and 7697.5 (FlowMonkey); GEX Metrix intraday November 4 estimate was 7581. The chosen 7667 is representative of the closest full-chain cluster. Dealer positioning is inferred, not observed.",
+    "volatility_behavior": "Above the 7660-7670 flip cluster, positive-gamma hedging can favor mean reversion and pinning near 7680-7710. A sustained break below the cluster, particularly below 7645-7600, could revive negative-gamma amplification. FlowMonkey's higher 7697.5 flip means the immediate regime remains model-dependent.",
+    "expected_behavior": "November 4 SPX rose 1.58% to 7688.62 after the midterm election outcome and lower oil prices, while semiconductor shares diverged negatively. November 5 premarket S&P futures were reported +0.16% versus prior settlement in a FactSet/Dow Jones snapshot; another morning report indicated -0.02%, showing time-sensitive variation. VIX was reported near 16.79 early Thursday versus 16.61 at Wednesday's close. Watch 7660-7670 as a gamma pivot, 7680-7700 as the near-spot pin zone, 7705-7710 as immediate upside option concentration, 7645 and 7600 below, and 7500-7510 as deeper put-gamma concentrations. Tapelab's November 5 ATM straddle implied approximately +/-45.75 SPX points from the November 4 close, not a forecast. AI infrastructure regulation concerns, semiconductor weakness, and earnings can override static levels."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.49,
+    "put_call_ratio_volume": 1.69,
+    "skew": "November 4 Obelion delayed November 5 expiry near-ATM strike grid shows put IV approximately equal to call IV, within about 0.1 volatility point near 7690; lower strikes generally have higher IV than upper strikes, consistent with downside skew. A current standardized SPX 25-delta risk reversal was not independently verified; this near-ATM observation is not a 25-delta measure.",
+    "zero_dte_dominance": "November 5 realized SPX 0DTE volume share is unavailable before the cash open. Obelion records 233333 puts and 199470 calls traded on November 4 in contracts expiring November 5 (put/call volume approximately 1.17), representing prior-session positioning in today's expiry rather than today's 0DTE volume. Tapelab's November 5 expiry-only net gamma estimate is +$4.5M across shown strikes, not comparable to full-chain billions."
+  },
+  "volatility_surface": {
+    "vix": 16.79,
+    "iv_30d_range": [
+      13.4,
+      13.6
+    ],
+    "iv_percentile": null,
+    "term_structure": "Obelion November 4 delayed SPX options surface reports December 4 (30 DTE) ATM IV around 13.4%-13.6%, versus November 5 near-expiry ATM IV around 16.1%-18.9% across varying public snapshots, and November 6 approximately 16.8%-17.1%. The front end is inverted relative to the 30-day point, with substantial short-dated premium; vendor snapshots are not synchronized. November 4 official VIX close was 16.61, versus early November 5 indicative VIX around 16.79. No defensible current SPX IV percentile was located."
+  }
+}
