@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-06T08:30:00-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7353.73,
+      "daily_high": 7681.29,
+      "daily_low": 7350.35,
+      "open": 7678.72
+    },
+    "vix": 28.18,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 26.06,
+    "spx_future": 0.18
+  },
+  "gex_data": {
+    "net_gex_min": -93.27,
+    "net_gex_max": -58.04,
+    "gamma_regime": "Negative gamma across checked November 5 SPX-specific models. All-expiration Obelion snapshots report -89.46B to -93.27B USD per 1% SPX move; Sikuli Research reported -58.04B at 15:55 ET. These are model-derived estimates with differing methodologies, not observed dealer inventory. Tapelab reports -14.8M for November 6 expiry only and is excluded from the all-expiration range.",
+    "gamma_flip": 7624,
+    "call_wall": 8000,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 7800
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Short-gamma inferred positioning: November 5 SPX close 7353.73 was below Obelion gamma flips 7605-7624, stale SquawkFlow 7652.87, Tapelab November 6 expiry 7685, and Sikuli Research 7704. Selected 7624 is a close-based Obelion estimate, not a universal threshold.",
+    "volatility_behavior": "Below the modeled gamma-flip region, delta hedging may reinforce directional moves and raise intraday volatility. A rebound does not by itself restore a positive-gamma regime. Put concentrations vary: Obelion all-expiration put wall 7000, Sikuli 7500, Tapelab November 6 expiry 7425. Strike levels are conditional, not guaranteed support or resistance.",
+    "expected_behavior": "After the November 5 SPX decline of 4.36%, early November 6 futures indicated a modest 0.18% rebound versus prior settlement, with an indicative VIX of 26.06 from a 04:20 ET market board. Watch the 7350 prior-session low, 7425 near-expiry put wall, 7500 broader put concentration, 7605-7704 model-dependent gamma transition region, and 7800-8000 overhead call concentrations. November 6 ATM straddle estimates from delayed vendors imply approximately 91-110 SPX points, not a directional forecast. October employment report is due at 08:30 ET and may quickly invalidate pre-release quotes. AI regulation and infrastructure spending concerns remain major risk factors."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.51,
+    "put_call_ratio_volume": 1.35,
+    "skew": "Obelion November 5 close November 6 expiry grid shows a downward strike-volatility slope: approximately 42.0% IV at 7315, 40.0% at 7355 ATM and 38.5% at 7395. Same-strike call-put IV differences are near zero, which is not a standardized 25-delta risk reversal. No reliable November 5 25-delta skew statistic was verified.",
+    "zero_dte_dominance": "November 6 realized 0DTE volume is unavailable before the cash open. Sikuli Research's November 5 15:55 ET snapshot attributed 36% of modeled gamma to 0-1DTE and 48% to expirations within seven days; these are gamma shares, not trading volume shares. Obelion recorded 461862 puts and 309962 calls traded November 5 in options expiring November 6, with put/call volume 1.49."
+  },
+  "volatility_surface": {
+    "vix": 26.06,
+    "iv_30d_range": [
+      21.1,
+      21.1
+    ],
+    "iv_percentile": null,
+    "term_structure": "Obelion November 5 closing SPX options surface shows December 4 (29-day) ATM IV 21.1%, versus November 6 one-day ATM IV around 40.0%-43.6% across delayed public snapshots; front-end term structure is sharply inverted. The VIX closed November 5 at 28.18, while the early November 6 indicative VIX was 26.06. A current standardized SPX IV percentile was not independently verified. The premarket VIX and futures indications are not synchronized."
+  }
+}
