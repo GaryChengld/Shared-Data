@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-09T08:32:15-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7376.86,
+      "daily_high": 7444.2,
+      "daily_low": 7369.55,
+      "open": 7377.65
+    },
+    "vix": 25.64,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 23.21,
+    "spx_future": 0.6
+  },
+  "gex_data": {
+    "net_gex_min": -82.43,
+    "net_gex_max": -45.72,
+    "gamma_regime": "Negative across Nov 6 SPX closing models, in USD billions of modeled delta per 1% SPX move: Obelion -74.18B to -82.43B across public snapshots, Options Analysis Suite -46.84B (expiries through Dec 4), and FlowMonkey -45.72B. Different dealer assumptions, data snapshots and expiry coverage; not directly observed dealer inventory.",
+    "gamma_flip": 7591,
+    "call_wall": 7650,
+    "put_wall": 7375,
+    "largest_negative_gamma_strike": null,
+    "largest_positive_gamma_strike": null
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Short gamma: SPX 7376.86 closed below Obelion's 7590.61-7595.02 zero-gamma estimates and SquawkFlow's Nov 6 morning 7589.11 flip. Selected 7591 approximates the close-based Obelion cluster. FlowMonkey found no well-defined flip in its Nov 6 book; this disagreement reflects model differences.",
+    "volatility_behavior": "In a modeled negative-gamma regime, dealer delta hedging can amplify price moves in both directions. FlowMonkey places the Nov 6 close near its 7375 put wall, with a 7400 apex; SquawkFlow instead identified 7300 as its morning put wall, and Obelion's full-chain put wall is 7000. These levels are positioning markers, not reliable support.",
+    "expected_behavior": "Friday Nov 6 SPX gained 0.31% to 7376.86 after Thursday's sharp decline. Monday premarket S&P futures were reported up 0.60% versus previous settlement; separate reports indicated stronger gains at different times. Falling oil prices and dip-buying supported risk appetite, while Nvidia-specific governance headlines and concerns over AI spending remained potential headwinds. Watch 7375-7400 near spot, 7300 lower, 7500-7515 as an options/maximum-pain zone, and 7590-7650 as a higher gamma-transition/call-wall region. Obelion's Nov 9 expiry straddle was quoted around 79-94 SPX points across asynchronous snapshots. Tuesday and Friday inflation releases are upcoming catalysts."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.43,
+    "put_call_ratio_volume": 1.19,
+    "skew": "Options Analysis Suite Nov 6 SPX 25-delta call-minus-put skew +0.084 under its vendor convention, indicating richer calls in that calculation; this is not interchangeable with the conventional put-minus-call risk reversal. Obelion's Nov 9 expiry grid has a downward strike-IV slope, indicating downside protection premium. OAS Nov 6 put/call OI 1.43 (14.8M puts versus 10.3M calls), and volume ratio 1.19 (2.9M puts versus 2.4M calls).",
+    "zero_dte_dominance": "Nov 9 realized 0DTE share is not available before cash trading. Obelion reports 311969 puts and 169974 calls traded on Nov 6 in options expiring Nov 9 (put/call volume 1.84), reflecting prior-session positioning, not Nov 9 0DTE activity. A reliable share of gamma or trading volume attributable to today's 0DTE expiry could not be verified."
+  },
+  "volatility_surface": {
+    "vix": 23.21,
+    "iv_30d_range": [
+      18.7,
+      19
+    ],
+    "iv_percentile": 90.5,
+    "term_structure": "Nov 6 SPX closing options snapshots: OAS overall ATM IV 18.7%, IV rank 53.6%, IV percentile 90.5%, 20-day realized vol 20.1%; Obelion Dec 8 near-30-day ATM IV 18.9-19.0%. Obelion Nov 9 front-expiry ATM IV varied from 29.6% to 32.9% across delayed public snapshots, sharply above one-month IV (front-end backwardation). VIX closed Nov 6 at 25.64; a Nov 9 market-data page displayed 23.21 but its precise observation time was not verified. November VIX futures near 22.48 are a different instrument."
+  }
+}
