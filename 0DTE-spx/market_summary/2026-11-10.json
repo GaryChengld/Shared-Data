@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-10T08:35:02-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7549.94,
+      "daily_high": 7577.39,
+      "daily_low": 7422.24,
+      "open": 7422.24
+    },
+    "vix": 19.92,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 19.98,
+    "spx_future": 0.02
+  },
+  "gex_data": {
+    "net_gex_min": -101.38,
+    "net_gex_max": -23.9,
+    "gamma_regime": "Negative in all checked SPX models. USD billions per 1% SPX move: SquawkFlow -101.38B (Nov 9 morning OI snapshot), GammaFlip -41.3B (Nov 9 close), GEX Metrix -23.9B (Nov 10 06:45 ET, expirations through Nov 20). Tapelab Nov 10 expiry-only -1.7M is not comparable. Models differ by timing, expirations and dealer assumptions.",
+    "gamma_flip": 7624,
+    "call_wall": 7700,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 8100
+  },
+  "dealer_positioning": {
+    "gamma_regime": "SPX closed Nov 9 at 7549.94, below full-chain GammaFlip 7624 and SquawkFlow 7579, and below Nov 10 GEX Metrix 7687. Tapelab Nov 10 expiry-only zero gamma 7522.5 is lower and not comparable to full-chain models. Selected 7624 is the Nov 9 closing all-expiration GammaFlip estimate; positioning is inferred rather than observed.",
+    "volatility_behavior": "Below full-chain flip estimates, short-gamma hedging may reinforce directional moves in both directions. The 7500 put concentration is a downside sensitivity marker, not guaranteed support. Reclaiming 7579-7624 may reduce hedging amplification in some models, while the Nov 10 GEX Metrix flip remains at 7687.",
+    "expected_behavior": "SPX advanced 2.35% on Nov 9, closing 7549.94, and VIX fell to 19.92. Nov 10 S&P 500 futures were approximately +0.02% versus prior settlement in an early premarket report; VIX indication around 19.98 was observed at 06:51 ET and is not synchronized. Watch 7500 and 7540 near the Nov 10 expiry walls, 7579-7624 as a model-dependent gamma transition, 7687-7700 overhead, and 7300 as a distant SquawkFlow put concentration. Tapelab Nov 10 ATM straddle implies approximately +/-60.35 SPX points, not a forecast. Oil and Iran developments, technology sentiment, and upcoming inflation releases remain catalysts."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.47,
+    "put_call_ratio_volume": 1.59,
+    "skew": "I Love Vol Nov 9 closing one-month 25-delta put-minus-call risk reversal +5.7 volatility points (70th percentile of the prior year), indicating a downside protection premium; 25-delta butterfly 0.77.",
+    "zero_dte_dominance": "Nov 10 realized 0DTE volume share is not available before the open. Obelion records 222142 puts and 193566 calls traded Nov 9 in contracts expiring Nov 10 (put/call volume 1.15), representing previous-session activity in today's expiry. Nov 10 expiry-only Tapelab net GEX is -1.7M, not comparable to full-chain estimates."
+  },
+  "volatility_surface": {
+    "vix": 19.98,
+    "iv_30d_range": [
+      15.3,
+      15.3
+    ],
+    "iv_percentile": 75,
+    "term_structure": "I Love Vol Nov 9 close: one-month ATM IV 15.3%, three-month ATM IV 15.6%, one-year ATM IV 17.4%; 1M-3M slope -0.3 volatility points (normal upward slope). One-month IV exceeds 75% of prior-year sessions. Options Analysis Suite lists Nov 10 1D ATM IV 18.9%, Nov 20 11D 16.7%, and Dec 9 30D 15.3%, implying elevated front-day premium. VIX closed Nov 9 at 19.92; premarket indication 19.98 was not synchronized with futures."
+  }
+}
