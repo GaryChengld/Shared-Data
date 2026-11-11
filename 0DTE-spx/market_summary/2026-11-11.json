@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-11T08:30:08-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7520.93,
+      "daily_high": 7543.92,
+      "daily_low": 7470.43,
+      "open": 7513.09
+    },
+    "vix": 19.46,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 18.75,
+    "spx_future": 0.86
+  },
+  "gex_data": {
+    "net_gex_min": -55.6,
+    "net_gex_max": -11.19,
+    "gamma_regime": "Negative in multiple Nov 10 SPX-specific models. GammaFlip estimates -55.6B USD delta per 1% SPX move; Options Analysis Suite -35.33B for expirations through Dec 10; Obelion public closing snapshots vary between -33.56B, -17.70B and -11.19B. Different snapshots and model assumptions produce a wide range, not a confidence interval.",
+    "gamma_flip": 7601,
+    "call_wall": 8000,
+    "put_wall": 7000,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled short gamma: Nov 10 SPX closed 7520.93, below GammaFlip's 7601 and Obelion's approximately 7588-7612 flip estimates. Selected 7601 is a central full-chain estimate. Actual dealer inventories are not publicly observed.",
+    "volatility_behavior": "Below the modeled 7588-7612 gamma transition region, short-gamma hedging may amplify advances and declines. The negative-gamma concentration at 7500 is a potential acceleration level, not guaranteed support. The 8000 positive-gamma peak and call wall are distant; Obelion's all-expiry put wall at 7000 is also distant.",
+    "expected_behavior": "Nov 10 SPX fell 0.38% to 7520.93, with a 7470.43-7543.92 session range. At 06:39 ET Nov 11, Reuters reported S&P 500 futures +0.86% versus prior settlement as CoreWeave results supported AI shares and Nvidia rebounded. Watch 7500, 7470, 7544, 7588-7612 and 7625. Obelion Nov 11 near-expiry ATM straddle implies approximately 61-70 SPX points from the previous close, not a directional prediction. Hot October CPI and rate-hike expectations remain risk factors. Veterans Day closes the US bond market but US equities remain open."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.47,
+    "put_call_ratio_volume": 1.35,
+    "skew": "Nov 10 Obelion Nov 11 expiry strike-IV curve shows downside skew: at 7480 put IV approximately 26.6% versus 7520 near-ATM put IV 23.2% and 7560 put IV 20.3% in one closing snapshot. These are strike-based IVs, not standardized 25-delta skew. The most recently verified OAS Nov 9 25-delta call-minus-put skew is +0.059, using that vendor's convention; a Nov 10 standardized reading was not verified.",
+    "zero_dte_dominance": "Nov 11 realized 0DTE share cannot be known before the cash open. Obelion Nov 10 activity in Nov 11 expiry showed 190395 puts versus 173543 calls, a put/call volume ratio of 1.10; this is prior-session activity in today's expiry, not today's realized 0DTE share. A reliable share of total SPX gamma attributable to Nov 11 expiry was not confirmed."
+  },
+  "volatility_surface": {
+    "vix": 18.75,
+    "iv_30d_range": [
+      15.5,
+      15.6
+    ],
+    "iv_percentile": 75.4,
+    "term_structure": "Obelion Nov 10 close snapshots show Nov 11 near-expiry ATM IV around 20.8%-23.3% versus Dec 10 30-day ATM IV around 15.5%-15.6%, an inverted front-end term structure. The 75.4% IV percentile is a stale Nov 9 OAS observation, not a confirmed Nov 10 update. VIX closed Nov 10 at 19.46 per Yahoo Finance and ChartVault, while an indicative Nov 11 quote near 18.75 was observed on a live Yahoo page with an uncertain timestamp. Reuters futures +0.86% was reported at 06:39 ET; the VIX and futures indications are not synchronized."
+  }
+}
