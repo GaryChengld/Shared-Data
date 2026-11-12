@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-12T08:34:29-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7619.38,
+      "daily_high": 7647.2,
+      "daily_low": 7571.88,
+      "open": 7586.65
+    },
+    "vix": 17.49,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": null,
+    "spx_future": -0.31
+  },
+  "gex_data": {
+    "net_gex_min": -15.7,
+    "net_gex_max": 21.9,
+    "gamma_regime": "Mixed across SPX-specific November 11 closing models: SquawkFlow full-chain -15.7B USD per 1% move, GEX Metrix through Nov 20 -1.4B, I Love Vol full-chain +6.5B, and FlowTradePro all-expiration +21.9B. These are model-dependent estimates with different expiration sets. A separate SquawkFlow -67.67B figure uses Nov 10 settled OI at an earlier spot and is excluded from the close-based range.",
+    "gamma_flip": 7613,
+    "call_wall": 7700,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": null,
+    "largest_positive_gamma_strike": 7700
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Mixed near the 7619.38 close: I Love Vol and GEX Metrix place the gamma flip at 7613, Gamma Model Dashboard at 7610, while SquawkFlow's previous morning model placed it at 7579.13. Spot is only 6-9 points above the most recent flip cluster, so a modest futures decline could move spot back into short-gamma territory. Dealer inventory is inferred from options OI.",
+    "volatility_behavior": "Positive-gamma models favor buying dips and selling rallies while spot remains above roughly 7610-7613, but negative full-chain estimates warn that hedging may amplify a move below that zone. Near-spot 7600 and 7650 option concentrations matter; 7500 is a broader put wall, 7700 a monthly-window call wall. News-driven moves can overwhelm modeled gamma.",
+    "expected_behavior": "SPX advanced 1.31% Wednesday to 7619.38; November 12 S&P 500 futures were down about 0.31% versus previous settlement in Reuters premarket coverage. Nvidia leadership uncertainty weighed on AI stocks and Friday PPI is a catalyst. Watch 7610-7613 as a key gamma pivot, 7600 and 7572 below, and 7647-7650 then 7700 above. I Love Vol's prior-close next-day ATM straddle implies about +/-0.56%, roughly 43 SPX points; not a forecast."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": null,
+    "put_call_ratio_volume": null,
+    "skew": "I Love Vol November 11 close one-month 25-delta put-minus-call risk reversal +4.5 volatility points (42nd percentile over one year), with a 25-delta butterfly of 0.63. Downside puts remain richer than comparable upside calls.",
+    "zero_dte_dominance": "November 12 realized 0DTE volume share is unavailable before the open. FlowTradePro November 11 closing 0DTE net gamma was +17.1B and all-expiration +21.9B; these are different maturity buckets, not volume shares. I Love Vol reports +9.0B gamma in expiries within seven days against +6.5B total, meaning longer-dated negative contributions offset short-dated positive gamma."
+  },
+  "volatility_surface": {
+    "vix": null,
+    "iv_30d_range": [
+      13.7,
+      13.7
+    ],
+    "iv_percentile": 48,
+    "term_structure": "I Love Vol November 11 close: one-week ATM IV 13.3%, one-month 13.7%, three-month 14.3%, one-year 16.7%; 1M minus 3M -0.6 volatility points, a normal upward term structure. One-month IV was lower than 52% of the previous year's sessions, implying approximately the 48th percentile. 30-day VIX-style variance-swap volatility was 17.5. VIX spot closed at 17.49 on November 11; no reliable synchronized November 12 premarket spot VIX quote was verified. VIX futures must not be substituted for spot."
+  }
+}
