@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-13T08:31:36-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7592.4,
+      "daily_high": 7652.76,
+      "daily_low": 7550.84,
+      "open": 7550.84
+    },
+    "vix": 18.7,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": null,
+    "spx_future": 0.27
+  },
+  "gex_data": {
+    "net_gex_min": -32.9,
+    "net_gex_max": -12.33,
+    "gamma_regime": "Negative in November 12 closing SPX models. Net GEX in USD billions per 1% SPX move: Theta Vantage -32.9B (all expirations), I Love Vol -15.4B (all expirations), Options Analysis Suite -13.38B (through December 11), and GEX Metrix -12.33B (through November 20). SquawkFlow's -2.78B is an older November 12 morning book using November 11 settled open interest and is excluded from this closing range. Models are not directly comparable.",
+    "gamma_flip": 7617,
+    "call_wall": 7700,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7600,
+    "largest_positive_gamma_strike": 8100
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Negative near the November 12 SPX close of 7592.40. Model gamma-flip estimates differ: SquawkFlow 7593.59 (using November 11 OI), Theta Vantage 7608.69, I Love Vol 7617 all expirations and 7602 for seven days, and GEX Metrix 7661 through November 20. Selected 7617 is the latest full-chain I Love Vol closing estimate. Dealer inventory is inferred from options OI.",
+    "volatility_behavior": "Below the 7594-7617 near-spot flip cluster, modeled short-gamma dealer hedging may reinforce rallies and declines. A move above this cluster could dampen price swings in some models, but GEX Metrix remains negative until approximately 7661. Theta Vantage identifies negative gamma at 7600 (-7.88B) and 7500 (-6.83B), with positive gamma at 8100 (+3.75B). These are not guaranteed support or resistance.",
+    "expected_behavior": "November 12 SPX declined 0.35% to 7592.40; VIX closed at 18.70. A November 13 premarket report indicated S&P 500 futures +0.27% versus prior settlement; an earlier 03:11 ET snapshot indicated -0.08%, illustrating quote timing risk. Watch 7580-7600 near the close and max-pain area, 7550 prior-session low, 7500 lower put concentration, 7609-7617 gamma transition, 7653 prior-session high, 7661 higher flip and 7700 near call wall. Theta Vantage estimates a November 13 implied one-standard-deviation range of 7522.49-7662.75, approximately +/-70.13 points, not a directional forecast. Friday PPI, rising Treasury yields, and Nvidia leadership uncertainty may override gamma levels."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.42,
+    "put_call_ratio_volume": 1.09,
+    "skew": "Options Analysis Suite November 12 SPX 25-delta skew +0.057 under its vendor convention, described as call-rich; do not equate this to the conventional put-minus-call risk reversal. SPX November 12 put/call OI ratio was 1.42 (15.0M puts versus 10.6M calls), and put/call volume ratio was 1.09 (2.7M puts versus 2.5M calls).",
+    "zero_dte_dominance": "November 13 realized 0DTE trading volume share is not available before the open. I Love Vol's November 12 closing model estimates -1.1B gamma in expirations within seven days versus -15.4B across all expirations (about 7% by magnitude), and -19.2B within 30 days; these are gamma exposures, not 0DTE volume shares. The November 13 expiry has a model-implied +/-70.13-point move per Theta Vantage."
+  },
+  "volatility_surface": {
+    "vix": null,
+    "iv_30d_range": [
+      14.1,
+      14.5
+    ],
+    "iv_percentile": 60.7,
+    "term_structure": "Options Analysis Suite November 12 SPX ATM IV was 14.3%, IV rank 26.6%, IV percentile 60.7%, versus 20-day realized volatility 22.4%. Its listed expiry surface shows November 13 1D ATM IV 17.4%, December 10 28D 14.5%, December 11 29D 14.4%, and December 14 32D 14.1%, indicating a front-day event premium relative to approximately one month. VIX spot closed November 12 at 18.70. A synchronized November 13 premarket spot VIX quote could not be independently verified; November VIX futures near 18.93 are not spot VIX."
+  }
+}
