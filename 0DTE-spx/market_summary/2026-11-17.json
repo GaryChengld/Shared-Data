@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-17T08:26:08-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7416.59,
+      "daily_high": 7515.6,
+      "daily_low": 7400.15,
+      "open": 7513.98
+    },
+    "vix": 22.91,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 22.59,
+    "spx_future": -0.23
+  },
+  "gex_data": {
+    "net_gex_min": -99.3,
+    "net_gex_max": -51.36,
+    "gamma_regime": "Negative across Nov 16 close and Nov 17 premarket SPX models. USD billions of modeled gamma per 1% move: SquawkFlow closing heatmap -99.3B (54 expiries); GammaFlip Nov 16 close -91.5B (all expiries); GEX Metrix Nov 17 05:45 ET -51.36B (through Nov 20). Different dealer assumptions and expiry coverage make the range non-comparable rather than statistical uncertainty.",
+    "gamma_flip": 7600,
+    "call_wall": 7500,
+    "put_wall": 7500,
+    "largest_negative_gamma_strike": 7500,
+    "largest_positive_gamma_strike": 8200
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled net short gamma at the Nov 16 SPX close of 7416.59. GammaFlip full-chain flip 7600, SquawkFlow prior settled-OI flip 7587, GEX Metrix near-term flip 7816; FirmTape volume-book flip 7444 uses a different methodology. Selected 7600 is the latest full-chain closing estimate, not observed dealer inventory.",
+    "volatility_behavior": "Below the full-chain gamma flip, hedging under short-gamma assumptions can sell into declines and buy into rallies, increasing realized volatility. GEX Metrix puts both near-term call and put walls at 7500; the Nov 16 close was below this concentration. Negative-gamma strikes are not guaranteed support or resistance.",
+    "expected_behavior": "SPX fell 1.92% Nov 16 to 7416.59 after trading 7400.15-7515.60. At 06:27 ET Nov 17, ES futures were -0.23% versus prior settlement; a 07:22 ET VIX indication was 22.59. Watch 7400 prior-session low, 7450, 7500 near-term option concentration, 7587-7600 full-chain gamma transition and 7816 near-term model flip. Nvidia earnings after the close and broader AI-sector uncertainty are key event risks. One-day implied move near +/-0.95% from Nov 16 volatility surface is a distribution estimate, not a forecast."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.41,
+    "put_call_ratio_volume": 1.24,
+    "skew": "I Love Vol Nov 16 close: one-month 25-delta put-minus-call risk reversal +7.1 volatility points, 82nd percentile of past-year observations; 25-delta butterfly 0.80. Options Analysis Suite reports 15.0M put OI versus 10.6M call OI (ratio 1.41) and 3.1M put volume versus 2.5M call volume (ratio 1.24) on Nov 16.",
+    "zero_dte_dominance": "Nov 17 realized 0DTE volume share is unavailable before the cash open. The Nov 17 expiry is represented in SquawkFlow's Nov 16 close gamma heatmap, but a reliable ratio of its gamma or volume to total SPX activity was not confirmed. Near-term expiry concentrations and Nov 20 monthly OpEx can materially affect intraday hedging."
+  },
+  "volatility_surface": {
+    "vix": 22.59,
+    "iv_30d_range": [
+      17.9,
+      17.9
+    ],
+    "iv_percentile": 87,
+    "term_structure": "I Love Vol Nov 16 close: ATM IV 1W 20.2%, 1M 17.9%, 3M 17.0%, 1Y 17.9%. One-month minus three-month slope +0.9 volatility points, inverted front-end; one-month IV higher than 87% of prior-year sessions. One-month IV was 4.2 vol points below 21-day realized volatility 22.1%. Nov 16 VIX close 22.91; Nov 17 07:22 ET indicative VIX 22.59. Values are not synchronized with the 06:27 ET ES futures snapshot."
+  }
+}
