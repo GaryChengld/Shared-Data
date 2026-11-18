@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-18T08:32:03-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7340.53,
+      "daily_high": 7415.37,
+      "daily_low": 7288.34,
+      "open": 7411.02
+    },
+    "vix": 25.46,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 24.25,
+    "spx_future": 0.67
+  },
+  "gex_data": {
+    "net_gex_min": -104.28,
+    "net_gex_max": -47.27,
+    "gamma_regime": "Negative across Nov 17 close / Nov 18 morning SPX models. USD billions per 1% SPX move: SquawkFlow Nov 18 08:15 ET -104.28B (full chain); Obelion Nov 17 16:00 ET -80.41B (all expirations); FlowMonkey Nov 17 close -71.06B; Options Analysis Suite Nov 17 -47.27B (through Dec 17). Model assumptions and expiry coverage differ.",
+    "gamma_flip": 7529,
+    "call_wall": 7650,
+    "put_wall": 7300,
+    "largest_negative_gamma_strike": null,
+    "largest_positive_gamma_strike": null
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled short gamma below the Nov 18 SquawkFlow 7529 flip; Obelion Nov 17 close flip 7556.56, while FlowMonkey finds no well-defined gamma flip in its closing book. Selected 7529 is the freshest published full-chain morning level. Dealer inventory is not directly observable.",
+    "volatility_behavior": "Short-gamma assumptions imply dealer hedging may amplify both declines and rebounds. A move above 7529-7557 could change the hedging regime in some models. FlowMonkey identifies 7350 as the largest absolute gamma concentration, without a verified sign; 7300 is a recurring put-side wall. Walls are not guaranteed support or resistance.",
+    "expected_behavior": "SPX fell 1.03% on Nov 17 to 7340.53, after a 7288.34-7415.37 range. Nov 18 premarket December S&P 500 futures were indicated +0.67% versus prior settlement in a delayed Investing.com quote; VIX was indicated 24.25 at 07:15 ET, down from 25.46. Watch 7288-7300 downside, 7350 gamma concentration, 7415 prior high, 7475 near-expiry max pain, and 7529-7557 model flips. Nvidia earnings after the close and November monthly options expiration on Friday increase event and positioning risk."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.46,
+    "put_call_ratio_volume": 1.28,
+    "skew": "Nov 17 standardized SPX 25-delta skew was not independently confirmed. Nov 16 Options Analysis Suite vendor-convention 25-delta skew was +0.076; that stale reading should not be treated as Nov 17. Nov 17 short-dated SPX put demand and elevated VIX are consistent with downside-hedge demand but do not quantify risk reversal.",
+    "zero_dte_dominance": "Nov 18 realized 0DTE share cannot be measured before the cash open. Obelion reports Nov 17 trading in Nov 18 expiry: 312414 puts and 208722 calls, put/call volume 1.50; this is previous-day volume in today's expiry, not Nov 18 realized 0DTE share. Nov 18 ATM straddle was approximately 83.10 points in one Obelion snapshot; another snapshot differs."
+  },
+  "volatility_surface": {
+    "vix": 24.25,
+    "iv_30d_range": [
+      20.3,
+      20.3
+    ],
+    "iv_percentile": 92.9,
+    "term_structure": "Nov 17 Options Analysis Suite SPX 30-day ATM IV approximately 20.3%, IV percentile 92.9%, IV rank 63.3%, versus 20-day realized volatility 23.2%. Its Nov 18 1D expiry ATM IV was 30.3%, Nov 19 2D 29.0%, and Nov 20 3D 28.3%, a pronounced front-end event premium relative to 30-day IV. Obelion Nov 18 ATM IV was 34.5% in a separate quote, illustrating model/snapshot differences. VIX closed Nov 17 at 25.46 and was indicated Nov 18 07:15 ET at 24.25; futures quote timing differs."
+  }
+}
