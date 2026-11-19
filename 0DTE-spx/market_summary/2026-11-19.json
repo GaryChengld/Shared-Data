@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-19T08:32:57-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7323.63,
+      "daily_high": 7367.68,
+      "daily_low": 7285.76,
+      "open": 7355.69
+    },
+    "vix": 24.56,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 21.97,
+    "spx_future": 1.15
+  },
+  "gex_data": {
+    "net_gex_min": -105.912,
+    "net_gex_max": -59.93,
+    "gamma_regime": "Negative. USD billions of model-estimated SPX dealer gamma per 1% move: OptionMind Nov 18 close -105.912B (OI proxy), I Love Vol -97.5B (all expiries), Obelion -59.93B (all expiries). GexLog reports -4.1B with a different methodology and is excluded from the range. These models are not directly interchangeable.",
+    "gamma_flip": 7515.06,
+    "call_wall": 8000,
+    "put_wall": 7300,
+    "largest_negative_gamma_strike": 7300,
+    "largest_positive_gamma_strike": null
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Short-gamma estimates dominate at the Nov 18 SPX close 7323.63. Obelion estimates gamma flip 7515.06; SquawkFlow's older Nov 18 morning settled-OI model 7529; I Love Vol Nov 18 closing flip 7564. GexLog Nov 19 morning finds no flip within its observable chain. The selected flip is Obelion's latest closing full-chain estimate; actual dealer inventory is unobservable.",
+    "volatility_behavior": "Under short-gamma assumptions, dealer hedging may reinforce moves in either direction, particularly around the 7300 put concentration and after the large positive futures gap. If the gap holds, a short-gamma squeeze toward 7450 and 7500-7564 is possible; rejection could accelerate a retreat toward 7300 and the 7285.76 prior low. These are conditional scenarios, not guaranteed reactions.",
+    "expected_behavior": "Nov 18 SPX closed 7323.63 (-0.23%), high 7367.68 and low 7285.76. Nov 19 premarket S&P 500 futures were reported +1.15% versus previous settlement; a separate early GexLog snapshot placed ES around 7432. Nvidia/AI sentiment and Anthropic IPO headlines are catalysts; hawkish Fed minutes remain a counterweight. Watch 7300, 7368, 7400, 7450, 7500-7529 and 7564. GexLog reports an expected move of approximately 102 SPX points anchored to the prior close, not a directional forecast."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.45,
+    "put_call_ratio_volume": 1.49,
+    "skew": "Nov 18 I Love Vol 1M 25-delta put-minus-call risk reversal +7.3 volatility points (82nd percentile of its prior-year observations); Stocknear independently estimates 7.2 points. Elevated downside put premium; 25-delta butterfly 0.78.",
+    "zero_dte_dominance": "Nov 19 realized 0DTE volume share is not observable before the cash open. Obelion reports Nov 18 trading in Nov 19 expiry: 264341 puts and 198223 calls (put/call volume 1.33 for this expiry), compared with 1.49 across all expiries. Obelion estimates a Nov 19 ATM straddle of approximately 101.80 SPX points; model and quote timing differences affect the estimate."
+  },
+  "volatility_surface": {
+    "vix": 21.97,
+    "iv_30d_range": [
+      19.6,
+      20
+    ],
+    "iv_percentile": 92,
+    "term_structure": "Nov 18 closing SPX 1M ATM IV: Stocknear 19.6%, I Love Vol 19.8%, Frenzy Capital 20.0%; I Love Vol 1W 22.0%, 3M 18.3%, 1Y 18.6%, giving inverted 1M-minus-3M slope +1.5 vol points. I Love Vol reports 1M IV percentile 92% and Frenzy Capital 97%; selected 92% is the SVI surface-based estimate. Obelion Nov 19 near-expiry ATM IV 26.8% versus Dec 18 20.0%, reflecting front-end premium. VIX Nov 18 close 24.56; Nov 19 indicative quote 21.97, not synchronized with futures."
+  }
+}
