@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-20T08:33:32-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7175.83,
+      "daily_high": 7415.64,
+      "daily_low": 7173.63,
+      "open": 7389.26
+    },
+    "vix": 28.44,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 28.8,
+    "spx_future": -0.66
+  },
+  "gex_data": {
+    "net_gex_min": -104.81,
+    "net_gex_max": -104.81,
+    "gamma_regime": "Negative in the latest verified SquawkFlow SPX full-chain model, -104.81 USD billion gamma per 1% index move, calculated November 19 at 08:15 ET using November 18 settled open interest. The November 20 refreshed chain and an independent comparable model value were not verified; this is a stale single-model observation, not a cross-model range.",
+    "gamma_flip": 7509.44,
+    "call_wall": 8100,
+    "put_wall": 7300,
+    "largest_negative_gamma_strike": null,
+    "largest_positive_gamma_strike": null
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled short gamma. SPX November 19 close 7175.83 is 333.61 points below SquawkFlow November 19 morning zero-gamma flip 7509.44. Intraday repricing of the same settled OI gave a 7511 flip and 7100 put wall at 15:55 ET. These are estimates, not observed dealer positions.",
+    "volatility_behavior": "Under negative-gamma assumptions, dealer delta hedging may reinforce selling into declines and buying into rebounds. November 20 monthly options expiration may increase charm and intraday strike sensitivity. The November 19 put wall 7300 has already been breached; it is not guaranteed support.",
+    "expected_behavior": "SPX dropped 2.02% on November 19 to 7175.83 after reversing from a 7415.64 high. A November 20 04:30 ET futures report indicated ES -0.66% versus prior settlement and VIX around 28.80; these are earlier indications, not synchronized 08:33 ET quotes. Monitor 7174 prior low, 7100 repriced put wall, 7000 major gamma concentration, 7300 prior put wall, and 7509 gamma flip. SquawkFlow November 19 closing options imply approximately +/-124.4 SPX points to November 20 expiration. AI-sector weakness, rising rate expectations and monthly OpEx are major risks."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.67,
+    "put_call_ratio_volume": null,
+    "skew": "Downside hedging demand is consistent with elevated VIX and negative modeled SPX gamma, but a dated November 19 standardized SPX 25-delta put-call risk reversal was not verified. The 1.67 OI put/call ratio is for the November 20 expiry only, not all SPX expirations.",
+    "zero_dte_dominance": "November 20 is monthly SPX options expiration. SquawkFlow's November 19 16:14 ET delayed chain lists 1,822,080 puts and 1,090,607 calls in the November 20 expiry (put/call OI approximately 1.67), indicating substantial expiry-specific positioning. Realized November 20 0DTE volume share is unavailable before the cash open. SquawkFlow modeled +3.91B USD of intraday charm contribution from contracts expiring November 20; this is not a volume-share metric."
+  },
+  "volatility_surface": {
+    "vix": 28.8,
+    "iv_30d_range": [
+      null,
+      null
+    ],
+    "iv_percentile": null,
+    "term_structure": "VIX November 19 close was 28.44 according to a dated market-data series; the November 20 04:30 ET indicative reading was approximately 28.80. SquawkFlow's November 19 closing option chain priced a November 20 expiration one-standard-deviation move of +/-1.73% (+/-124.4 SPX points) and a December 18 expiration move of +/-6.48% (+/-466.6 points), based on different horizons. These figures cannot establish a reliable 30-day ATM IV or term-structure slope without synchronized forward and IV quotes."
+  }
+}
