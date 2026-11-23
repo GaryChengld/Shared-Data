@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-23T08:32:20-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 6910.39,
+      "daily_high": 7198.67,
+      "daily_low": 6882.66,
+      "open": 7150.39
+    },
+    "vix": 35.89,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 30.49,
+    "spx_future": 2.77
+  },
+  "gex_data": {
+    "net_gex_min": -100.43,
+    "net_gex_max": -32.9,
+    "gamma_regime": "Negative across Nov 20 closing SPX models. Net gamma in USD billions per 1% SPX move: OptionMind OI proxy -100.43B; FlowTradePro all-expiration -32.9B in its Nov 23 page. These are not synchronized and differ in dealer assumptions and expiration coverage; the range is model dispersion, not a confidence interval.",
+    "gamma_flip": 6835,
+    "call_wall": 7000,
+    "put_wall": 6800,
+    "largest_negative_gamma_strike": null,
+    "largest_positive_gamma_strike": null
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled net short gamma despite a sharp premarket rebound. FlowTradePro all-expiration zero-gamma level is 6835, while its Nov 23 0DTE zero-gamma level is 6620; the 0DTE model reports -3.5B and the all-expiration model -32.9B. A flip level is model-specific, and actual dealer inventories are not directly observable.",
+    "volatility_behavior": "Negative gamma can amplify directional hedging and produce sharp reversals, especially after the roughly 2.8% overnight futures rally. A reported 0DTE pin at 6825 and near-term walls at 6700 and 7200 differ from all-expiration walls at 6800 and 7000. Treat all levels as conditional positioning references, not guaranteed support or resistance.",
+    "expected_behavior": "SPX fell 3.70% Friday Nov 20 to 6910.39 after a 6882.66-7198.67 session range. Reuters reported S&P 500 futures +2.77% at 07:01 ET Monday Nov 23 as AI and semiconductor shares rebounded. VIX was indicated near 30.49 in a later premarket Yahoo quote versus Friday's 35.89 close. Watch 6883-6910 for a potential gap-retest, 7000 all-expiry concentration, 7126 near the OptionMind Nov 23 implied upper band, and 7199-7200 prior high and 0DTE call wall. Flash PMIs and Fed commentary are event risks. A strong gap does not establish that the selloff has ended."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 2.26,
+    "put_call_ratio_volume": 1.16,
+    "skew": "I Love Vol Nov 20 closing one-month 25-delta put-minus-call risk reversal +10.3 volatility points, at the 99th percentile of its one-year distribution, showing unusually expensive downside protection. The OI put/call ratio 2.26 comes from a Nov 20 Options Database snapshot (1,402,903 puts / 622,048 calls) and may represent a limited expiration or snapshot scope; it is not verified as full-chain OI.",
+    "zero_dte_dominance": "Nov 23 realized 0DTE volume share cannot be measured before the cash open. FlowTradePro estimates -3.5B 0DTE gamma versus -32.9B all-expiration gamma (about 10.6% by magnitude, not a volume share). Market Chameleon recorded 65.7% of SPX option volume in same-day expirations on Nov 18; this historical observation is not today's share. FlowTradePro estimates Nov 23 0DTE ATM straddle around +/-165 SPX points; OptionMind Nov 20 close estimated +/-203.41 for Nov 23."
+  },
+  "volatility_surface": {
+    "vix": 30.49,
+    "iv_30d_range": [
+      29.6,
+      29.6
+    ],
+    "iv_percentile": 100,
+    "term_structure": "I Love Vol Nov 20 closing SPX ATM IV: 1W 35.4%, 1M 29.6%, 3M 24.1%, 1Y 21.3%. One-month minus three-month slope +5.5 volatility points indicates strong front-end inversion. One-month IV was at the highest level in its past-year sample (reported percentile 100). Obelion's Nov 20 16:00 ET Nov 23 1D ATM IV was 54.3%, versus OptionMind's 32.4% for the same expiry, highlighting large model and snapshot differences. The Nov 23 premarket VIX indication is not synchronized with the Reuters 07:01 ET futures quote."
+  }
+}
