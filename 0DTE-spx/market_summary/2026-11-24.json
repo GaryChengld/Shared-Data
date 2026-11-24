@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-24T08:27:04-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7237.17,
+      "daily_high": 7295.6,
+      "daily_low": 7152.66,
+      "open": 7227.41
+    },
+    "vix": 26.62,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 28.54,
+    "spx_future": -0.85
+  },
+  "gex_data": {
+    "net_gex_min": -36.14,
+    "net_gex_max": -18.2,
+    "gamma_regime": "Negative across November 23 closing models: SPX Lens -36.14B, Amon Hen -32.26B and Bullflow -18.20B USD per 1% move. Expiry coverage and dealer assumptions differ.",
+    "gamma_flip": 7474,
+    "call_wall": 8000,
+    "put_wall": 7000,
+    "largest_negative_gamma_strike": 7300,
+    "largest_positive_gamma_strike": 8000
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled short gamma. Closing flip estimates: Amon Hen 7463.29, SquawkFlow 7474 and SPX Lens 7499. Selected median 7474. Actual dealer inventories are unobservable.",
+    "volatility_behavior": "Below the flip cluster, hedging may amplify directional moves. Bullflow identifies 7300 as its largest negative gamma strike; Amon Hen identifies 7250 as its largest absolute concentration. Neither guarantees support or resistance.",
+    "expected_behavior": "SPX rose 4.73% on November 23. Reuters reported November 24 ES futures down 0.85% at 07:04 ET as AI shares retraced Monday gains. Watch 7153, 7200, 7250, 7296-7300 and 7463-7499. Amon Hen estimates a one-standard-deviation move of 109.86 points from the prior close, not a directional forecast. Wednesday PCE and holiday-week liquidity are risks."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.34,
+    "put_call_ratio_volume": 1.2,
+    "skew": "Obelion November 23 13:45 ET same-day expiry put IV was 46.8% at 7165 versus 41.0% at 7195, consistent with downside strike skew; a standardized 30-day 25-delta risk reversal was not verified.",
+    "zero_dte_dominance": "November 24 realized cash-session share is not yet available. Obelion recorded 2165761 contracts in November 23 same-day expiry by 13:45 ET, versus Options Database full-session total of 4972276 contracts. The cross-source ratio of 43.6% is indicative only, not a synchronized final share."
+  },
+  "volatility_surface": {
+    "vix": 28.54,
+    "iv_30d_range": [
+      21.9,
+      21.9
+    ],
+    "iv_percentile": null,
+    "term_structure": "Stocknear November 23 closing 30-day ATM IV was 21.9%. Amon Hen next-day implied range of 109.86 points corresponds to approximately 29% annualized volatility using a 365-day convention, suggesting a front-end premium; this is an approximation across models. Yahoo VIX was 28.54 at 05:59 ET November 24 versus 26.62 prior close. Futures and VIX quotes are not synchronized."
+  }
+}
