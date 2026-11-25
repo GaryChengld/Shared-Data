@@ -1,0 +1,47 @@
+{
+  "timestamp": "2026-11-25T08:30:02-05:00",
+  "previous_day": {
+    "spx": {
+      "close": 7201.09,
+      "daily_high": 7223.95,
+      "daily_low": 7138.93,
+      "open": 7172.33
+    },
+    "vix": 26.36,
+    "add_nyse": null
+  },
+  "premarket": {
+    "vix": 30.41,
+    "spx_future": -2.02
+  },
+  "gex_data": {
+    "net_gex_min": -81.376,
+    "net_gex_max": -52.26,
+    "gamma_regime": "Negative across November 24 models: OptionMind -81.376B, Theta Vantage -67.9B and Amon Hen -52.26B USD per 1% move. Coverage and dealer assumptions differ.",
+    "gamma_flip": 7423.6,
+    "call_wall": 8100,
+    "put_wall": 7000,
+    "largest_negative_gamma_strike": 7000,
+    "largest_positive_gamma_strike": null
+  },
+  "dealer_positioning": {
+    "gamma_regime": "Modeled short gamma. Flip estimates are 7406.08 (Amon Hen), 7423.60 (Theta Vantage) and 7437 (SquawkFlow, using older settled OI). Actual dealer inventories are unobservable.",
+    "volatility_behavior": "Short-gamma hedging may amplify moves in either direction. Theta Vantage identifies negative gamma at 7000, 7250 and 7300. Amon Hen identifies 7250 as its largest absolute gamma concentration.",
+    "expected_behavior": "SPX fell 0.50% on November 24. November 25 futures were down 2.02% at 07:21 ET amid AI-sector weakness and tariff concerns. Watch 7000, 7100, 7139, 7200, 7224 and 7250. Amon Hen estimates a prior-close implied move of 95.80 points; Theta Vantage estimates 104.34 points. PCE, GDP and holiday liquidity are key risks. These ranges are not directional forecasts."
+  },
+  "options_flow": {
+    "put_call_ratio_oi": 1.36,
+    "put_call_ratio_volume": 1.07,
+    "skew": "I Love Vol November 24 one-month 25-delta put-minus-call risk reversal was 8.6 volatility points, at the 90th percentile. Volume ratio 1.07 is from Options Database at 15:11 ET, not a final session total.",
+    "zero_dte_dominance": "Today's realized share is unavailable before the cash open. Obelion recorded 1753459 same-day contracts by 12:30 ET November 24. November 25 expiry traded 192107 puts and 164065 calls on November 24, a ratio of 1.17, not today's realized volume share."
+  },
+  "volatility_surface": {
+    "vix": 30.41,
+    "iv_30d_range": [
+      21.7,
+      21.7
+    ],
+    "iv_percentile": 95,
+    "term_structure": "I Love Vol November 24 close: 1W 21.6%, 1M 21.7%, 3M 20.0%, 1Y 19.7%. One-month minus three-month slope +1.7 volatility points indicates inversion. Obelion November 25 expiry ATM IV was 27.5% at the prior close. Yahoo spot VIX was 30.41 at 06:38 ET November 25 versus 26.36 prior close; futures quote timing differs."
+  }
+}
